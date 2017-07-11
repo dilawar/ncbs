@@ -1,6 +1,9 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[top=2cm, bottom=2cm, left=3cm, right=3cm, heightrounded]{geometry}
 \usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{glossaries}
+\usepackage[misc]{ifsym}
 \pagestyle{fancy}
 \usepackage{amsmath}
 \usepackage{enumitem}
@@ -15,19 +18,26 @@
     urlcolor={blue!80!black}
 }
 \usepackage{todonotes}
+\usetikzlibrary{fit,calc,arrows,arrows.meta}
 \usepackage{booktabs}
 \usepackage[framemethod=tikz,outerlinewidth=0,linewidth=0pt]{mdframed}
 \usepackage{amssymb}
 %\usepackage{ebgaramond}
-\usepackage[sfdefault,light]{FiraSans}
-%\usepackage[default]{opensans}
+%\usepackage[sfdefault,light]{FiraSans}
+\usepackage[default]{opensans}
+\usetikzlibrary{external}
+\tikzexternalize
 
-\newcommand\MAILTO[2]{#1 (E-mail: \href{mailto:#2}{\nolinkurl{#2}})}
+\newcommand\MAILTO[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
+\newcommand\MAILTOBREAK[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
 
 \author{NCBS Bangalore}
 \title{Student Hanbook}
 \date{\today}
+
 \begin{document}
+
+\input{glossaries}
 
 The purpose of this handbook is to outline the procedures for students to receive a degree.
 This handbook will be updated annually in August. Any major changes made prior to that
@@ -44,17 +54,34 @@ being able to trust each other’s data.  Any form of cheating, plagiarism, or
 falsification of data is unacceptable and will invite appropriate consequences.
 \end{mdframed}
 
+\newpage
+\tableofcontents 
 
 \newpage
-\section*{Academic Calendar}
+\section{Academic Calendar}
+\label{sec:academic_calendar}
 
 It is the student’s responsibility to ensure they meet all requirements and
-deadlines.  TCM: Thesis Committee Meeting CE: Comprehensive Examination
+deadlines. 
+
+\marginpar{\footnotesize TCM:  Thesis Committee Meeting}
+\marginpar{\footnotesize CE: Comprehensive Examination}
+
+
+\subsection{PhD Calendar}
+\input{calendar_phd}
+
+\subsection{Int-PhD Calendar}
+\input{calendar_intphd}
+
+\subsection{MSc Calendar}
+\input{calendar_msc}
 
 \newpage
-\section*{Where to go for help}
+\section{Where to go for help}
 
-\paragraph{Academic Office} All student academic matters, including scheduling
+\subsection{Academic Office} 
+All student academic matters, including scheduling
 Annual Work Seminars, submission of Thesis Advisory Committee reports, course
 transcripts, interactions with MU or TIFR, and thesis submission.
 
@@ -63,7 +90,7 @@ transcripts, interactions with MU or TIFR, and thesis submission.
     \item \MAILTO{Ms. K. S. Vishalakshi}{ksvishal@ncbs.res.in}
 \end{itemize}
 
-\paragraph{Establishment and Administrative Office}
+\subsection{Establishment and Administrative Office}
 Joining formalities, extramural fellowships, interface with outside agencies.
 
 \begin{itemize}
@@ -72,8 +99,38 @@ Joining formalities, extramural fellowships, interface with outside agencies.
     \item \MAILTO{Mr. A. Ramachandra}{anramachandra@instem.res.in}
 \end{itemize}
 
-\newpage
-\tableofcontents
+\subsection{Miscellenous}
+
+\begin{tabularx}{\textwidth}{l X X}
+    \toprule
+    Service & Supervisor & Notes \\
+    \midrule
+    Main reception & \MAILTOBREAK{Anand Kumar}{reception@ncbs.res.in} & Any general enquiry \\
+    Air conditioning & \MAILTOBREAK{HS Venkataramana}{achelp@ncbs.res.in} & AC issues \\
+    Animal care facility & \MAILTOBREAK{Dr. Mohan}{mohan@ncbs.res.in} & Aninal
+        procedures. Note that its not a helpdesk queue.  \\
+    Civil and Interiors & \MAILTOBREAK{Mr. H.M. Basavaraja, Ms.
+    Savitha}{civilint@ncbs.res.in} & Civil engineering, plumbing, paints,
+        furniture and interiors, gardening \\
+    Computer services & \MAILTOBREAK{Mr. Prasanta Baruah}{ithelp@ncbs.res.in} & 
+        Computer hardware and software, internet services \\
+    Electricals & \MAILTOBREAK{ Mr. Suresh Kumar}{elechelp@ncbs.res.in} & 
+            Electrical issues, wiring, lighting \\
+    Electronic Workshop & \MAILTOBREAK{Mr.  Dorababu}{elecworkshop@ncbs.res.in} & 
+        Electronic components, PCB \\
+    Hostel and Canteen & \MAILTOBREAK{Mr. Shaju Varghese}{hospitality@ncbs.res.in} & 
+        Canteen, guest house, hostel, lab cleaning, bathrooms \\
+    Instrumentation & \MAILTOBREAK{Mr. P.C. Gautam}{instrumentation@ncbs.res.in} &
+        Lab equipment, UPSs, telecom issues, projectors, videoconferencing \\
+    Labkitchen & \MAILTOBREAK{ }{labkitchen@ncbs.res.in} & Gas cylinders, media, glassware \\
+    Library & \MAILTOBREAK{Mr. A.D. Chinchure}{library@ncbs.res.in} &
+        library Books, journals, online resources. Note that its not a helpdesk
+        queue \\
+    Room booking & \MAILTOBREAK{ }{bookmyvenue@ncbs.res.in} & All room bookings \\
+    Transport & \MAILTOBREAK{}{transport@ncbs.res.in} & Local transport \\
+    \bottomrule
+\end{tabularx}
+
 
 \newpage
 \section{Programmes of study}
@@ -710,7 +767,6 @@ provided on a Bridging Appointment.
 
 
 \section{Thesis Submission}
-\marginpar{\footnotesize Ah, Finally!}
 The detailed checklist of forms and documents required for synopsis and thesis submission
 at TIFR and MU is available at the Academic Office. Please ensure you are using up-to-date
 forms. Studentship is necessary for submission of the thesis to TIFR or MU. Students are
@@ -990,10 +1046,9 @@ violation of the Honour Code: If it isn't fixed at once then you will spoil the 
     \item Mr. P. C. Gautam: pchandra@ncbs.res.in
 \end{itemize}
 
-\begin{minipage}{1.0\textwidth}
 
+{
 \footnotesize 
-
 \paragraph{Statutory Research Committees} As required by national policies,
 specific research committees have been constituted to ensure the safety of the
 researchers and the research subjects, and the welfare of the environment. The
@@ -1045,7 +1100,7 @@ The institutional committee meets twice in the year to provide overview, review
 projects and proposals, approve the scientific merit of all issues related to
 stem cell research.
 
-\end{minipage}
+}
   
 	
   
@@ -1171,10 +1226,10 @@ Administrators. Please report major outages to the reception desk at any time of
 night, any day of the week.
 
 \begin{tabular}{l l}
-Helpdesk & helpdesk@ncbs.res.in \\
-System administrators & Prasanta Kumar Baruah (prasanta@ncbs.res.in) \\
-Computer Committee & Upinder S. Bhalla, R. Sowdhamini, Ramaswamy, Sandeep Krishna.
-\end{tabular}
+    Helpdesk & \MAILTO{IT Help}{helpdesk@ncbs.res.in} \\
+    System administrators & Prasanta Kumar Baruah (prasanta@ncbs.res.in) \\
+    Computer Committee & Upinder S. Bhalla, R. Sowdhamini, Ramaswamy, Sandeep Krishna.
+\end{tabular} 
 
 \section{Helpdesk System}
 

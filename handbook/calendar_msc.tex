@@ -1,0 +1,42 @@
+\begin{tikzpicture}[scale=1
+    , every node/.style={node distance=2mm,inner sep=1pt}
+]
+    \small
+    \edef\dy{-1.2mm}
+    \edef\gap{1.2}
+    \foreach \y in {1,2,3}
+    {
+        \node (year\y) at (-1,-\gap * \y cm) {Year \y};
+        \foreach \month[count=\m] in {Aug,Sep,Oct,Nov,Dec,Jan,Feb,Mar,Apr,May,Jun,Jul}
+        \node[] (year\y month\m) at (\m,-\gap * \y cm) {\texttt{\month}};
+    }
+
+    % Orientation.
+    \def\cl{red}
+    \node[fit=(year1month1),fill=\cl,opacity=0.2] (orientation) {};
+    \node[below=of orientation.center] {\textcolor{\cl}{Orientation}};
+
+    \node[above=of year1month1.east,yshift=-\dy]  (labassignments) {\bf Lab Assignment};
+    \draw[-latex] (labassignments) -- (year1month1.east);
+
+    % TCM
+    \node[fill=\cl,opacity=0.2,fit=(year1month6) (year1month11)] (tcm) { };
+    \node[below=of tcm.center] {\textcolor{\cl}{TCM and renewel}};
+
+    \node[fill=\cl,opacity=0.2,fit=(year2month1) (year2month2)] (tcm) { };
+    \node[below=of tcm.center] {\textcolor{\cl}{TCM and renewel}};
+
+    \node[fill=\cl,opacity=0.2,fit=(year2month6) (year2month11)] (tcm) { };
+    \node[below=of tcm.center] {\textcolor{\cl}{TCM and renewel}};
+
+    % Thesis 
+    \node[fill=\cl,opacity=0.2,fit=(year3month1) (year3month5)] (thesis) { };
+    \node[below=of thesis.center] 
+        {\textcolor{\cl}{Thesis Approval}};
+
+    \node[fill=\cl,opacity=0.2,fit=(year3month6) (year3month12)] (thesis1) { };
+    \node[below=of thesis1.center] 
+        {\textcolor{\cl}{Thesis submission}};
+
+\end{tikzpicture}    
+
