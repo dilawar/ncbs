@@ -1,14 +1,19 @@
+%\RequirePackage{luatex85}
+\documentclass[crop,tikz]{standalone}
+\usepackage{pgfplots}
+\begin{document}
+
 \begin{tikzpicture}[scale=1
     , every node/.style={node distance=2mm,inner sep=1pt}
 ]
     \small
     \edef\dy{-1.2mm}
-    \edef\gap{1.2}
+    \edef\gap{1.1}
     \foreach \y in {1,2,3}
     {
         \node (year\y) at (-1,-\gap * \y cm) {Year \y};
         \foreach \month[count=\m] in {Aug,Sep,Oct,Nov,Dec,Jan,Feb,Mar,Apr,May,Jun,Jul}
-        \node[] (year\y month\m) at (\m,-\gap * \y cm) {\texttt{\month}};
+        \node[] (year\y month\m) at (\m,-\gap * \y cm) {{\month}};
     }
 
     % Orientation.
@@ -40,3 +45,4 @@
 
 \end{tikzpicture}    
 
+\end{document}

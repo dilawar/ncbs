@@ -1,2 +1,5 @@
-all : ./student_handbook_2016.tex 
-	lualatex --shell-escape $<
+all : ./handbook.tex 
+	pdflatex --shell-escape $<
+
+doc : ./student_handbook.markdown
+	~/Scripts/markdown_to_pdf.sh $<

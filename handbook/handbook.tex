@@ -2,11 +2,15 @@
 \usepackage[top=3cm, bottom=2cm, left=3cm, right=4cm, heightrounded]{geometry}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
-\usepackage{glossaries}
-\usepackage[misc]{ifsym}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,calc,arrows,arrows.meta}
+
 \pagestyle{fancy}
 \usepackage{amsmath}
 \usepackage{enumitem}
+\usepackage{standalone}
+%\standaloneconfig{mode=buildnew}
+
 \setlist{nosep}
 \usepackage{mathtools}
 \usepackage[]{hyperref}
@@ -17,12 +21,12 @@
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
-\usepackage{todonotes}
-\usetikzlibrary{fit,calc,arrows,arrows.meta}
+
+\usepackage[misc]{ifsym}
 \usepackage{booktabs}
 \usepackage[framemethod=tikz,outerlinewidth=0,linewidth=0pt]{mdframed}
 \usepackage{amssymb}
-\usepackage{fontspec}
+%\usepackage{fontspec}
 %\usepackage[osf]{ebgaramond}
 \usepackage[sfdefault,light]{FiraSans}
 %\usepackage[default]{opensans}
@@ -33,13 +37,14 @@
 \newcommand\MAILTO[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
 \newcommand\MAILTOBREAK[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
 
+\usepackage[xindy,acronym]{glossaries}
+\makeglossaries
+\loadglsentries{terms}
+
 \author{NCBS Bangalore}
 \title{Student Hanbook}
 \date{\today}
-
 \begin{document}
-
-\input{glossaries}
 
 The purpose of this handbook is to outline the procedures for students to receive a degree.
 This handbook will be updated annually in August. Any major changes made prior to that
@@ -66,18 +71,16 @@ falsification of data is unacceptable and will invite appropriate consequences.
 It is the student’s responsibility to ensure they meet all requirements and
 deadlines. 
 
-\marginpar{\footnotesize TCM:  Thesis Committee Meeting}
-\marginpar{\footnotesize CE: Comprehensive Examination}
-
+\gls{tcm}. \gls{ce}.
 
 \subsection{PhD Calendar}
-\input{calendar_phd}
+\includestandalone{calendar_phd}
 
 \subsection{Int-PhD Calendar}
-\input{calendar_intphd}
+\includestandalone{calendar_intphd}
 
 \subsection{MSc Calendar}
-\input{calendar_msc}
+\includestandalone{calendar_msc}
 
 \newpage
 \section{Where to go for help}
@@ -1598,5 +1601,11 @@ Wednesdays and Fridays between noon and 2pm. An ATM is available next to the gat
 \subsection{Child care}
 The Dolna creche is open to babies older than four months, as well as to
 toddlers and young children. The creche has an experienced and well-trained staff.
+
+
+%\newpage
+%\clearpage
+%\printglossary[type=\acronymtype]
+%\printglossary
 
 \end{document}          
