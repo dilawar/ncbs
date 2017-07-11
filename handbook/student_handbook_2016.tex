@@ -1,21 +1,33 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[top=2cm, bottom=2cm, left=3cm, right=5cm, heightrounded,
-      marginparwidth=4cm, marginparsep=5mm]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=3cm, heightrounded]{geometry}
 \usepackage{fancyhdr}
+\pagestyle{fancy}
 \usepackage{amsmath}
+\usepackage{enumitem}
+\setlist{nosep}
 \usepackage{mathtools}
-\usepackage{hyperref}
+\usepackage[]{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 \usepackage{todonotes}
 \usepackage{booktabs}
+\usepackage[framemethod=tikz,outerlinewidth=0,linewidth=0pt]{mdframed}
 \usepackage{amssymb}
-\usepackage[default]{opensans}
+%\usepackage{ebgaramond}
+\usepackage[sfdefault,light]{FiraSans}
+%\usepackage[default]{opensans}
 
-% Title Page
+\newcommand\MAILTO[2]{#1 (E-mail: \href{mailto:#2}{\nolinkurl{#2}})}
+
 \author{NCBS Bangalore}
 \title{Student Hanbook}
 \date{\today}
 \begin{document}
-\maketitle
 
 The purpose of this handbook is to outline the procedures for students to receive a degree.
 This handbook will be updated annually in August. Any major changes made prior to that
@@ -23,12 +35,14 @@ time will be posted to our website with notification to all graduate students by
 information in this handbook should be viewed as guidelines and are subject to change
 depending on the policies of the Institutes.
 
+\vspace{10cm}
 
-\section*{Honour Code}
+\begin{mdframed}[frametitle=\textsc{Honor Code},backgroundcolor=yellow!20]
 Our community operates on a principle of trust. Most research materials are kept
 in accessible locations. Research on our campus depends critically on colleagues
 being able to trust each other’s data.  Any form of cheating, plagiarism, or
 falsification of data is unacceptable and will invite appropriate consequences.
+\end{mdframed}
 
 
 \newpage
@@ -44,15 +58,19 @@ deadlines.  TCM: Thesis Committee Meeting CE: Comprehensive Examination
 Annual Work Seminars, submission of Thesis Advisory Committee reports, course
 transcripts, interactions with MU or TIFR, and thesis submission.
 
-Contact: acadoffice@ncbs.res.in
-Ms. K. S. Vishalakshi (ksvishal@ncbs.res.in)
+\begin{itemize}
+    \item \MAILTO{Academic Office}{acadoffice@ncbs.res.in} 
+    \item \MAILTO{Ms. K. S. Vishalakshi}{ksvishal@ncbs.res.in}
+\end{itemize}
 
 \paragraph{Establishment and Administrative Office}
 Joining formalities, extramural fellowships, interface with outside agencies.
 
-Contact: adminhelp@ncbs.res.in
-Mr. Ashok Rao (ashok@ncbs.res.in)
-Mr. A. Ramachandra (anramachandra@instem.res.in)
+\begin{itemize}
+    \item \MAILTO{Admin Help}{adminhelp@ncbs.res.in}
+    \item \MAILTO{Mr. Ashok Rao}{ashok@ncbs.res.in}
+    \item \MAILTO{Mr. A. Ramachandra}{anramachandra@instem.res.in}
+\end{itemize}
 
 \newpage
 \tableofcontents
