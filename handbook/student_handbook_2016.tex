@@ -1,5 +1,5 @@
-\documentclass[a4paper]{article}
-\usepackage[top=2cm, bottom=2cm, left=3cm, right=4cm, heightrounded]{geometry}
+\documentclass[a4paper]{extarticle}
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=4cm, heightrounded]{geometry}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 \usepackage{glossaries}
@@ -22,11 +22,13 @@
 \usepackage{booktabs}
 \usepackage[framemethod=tikz,outerlinewidth=0,linewidth=0pt]{mdframed}
 \usepackage{amssymb}
-\usepackage{ebgaramond}
-%\usepackage[sfdefault,light]{FiraSans}
+\usepackage{fontspec}
+%\usepackage[osf]{ebgaramond}
+\usepackage[sfdefault,light]{FiraSans}
 %\usepackage[default]{opensans}
-\usetikzlibrary{external}
-\tikzexternalize
+%\usepackage{libertine}
+%\usepackage{charter}
+%\setmainfont[Ligatures=TeX]{Cambria}
 
 \newcommand\MAILTO[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
 \newcommand\MAILTOBREAK[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
@@ -1293,12 +1295,11 @@ note that the institute staff should not be called upon for working on personal 
 particular, laptops that you buy partly on your contingency grants are owned by you (you
 can take it when you leave), so it is inappropriate to ask the staff to fix them up for you.
 
-\subsection{Where to go for help}
 
+\subsection{Where to go for help}
 The Technical and Research Services Committee oversees these sections. Current members
 are: Dr. Sanjay Sane; Dr. Akash Gulyani; Dr. P. V. Shivaprasad; Mr. H. S. Venkataramana;
 Mr. Rengasamy; Mr. P.P. Ranjith (Secretary).
-
 	
 \section{Library}
 The library provides access to printed resources such as books and journals, as well as
@@ -1377,7 +1378,7 @@ location.
 Library & library@ncbs.res.in \\
 Librarian & Avinash D. Chinchure, avinashdc@ncbs.res.in \\
 Assistant Librarian & S. Umashashi, uma@ncbs.res.in
-\end{tabular} \newline \newline \newline \newline
+\end{tabular}
 
 \section{Technical and Research Facilities}
 
