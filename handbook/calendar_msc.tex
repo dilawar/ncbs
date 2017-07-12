@@ -1,6 +1,8 @@
 %\RequirePackage{luatex85}
 \documentclass[crop,tikz]{standalone}
-\usepackage{pgfplots}
+\usetikzlibrary{calc,fit,arrows,arrows.meta,positioning}
+\usepackage[sfdefault,light]{FiraSans}
+
 \begin{document}
 
 \begin{tikzpicture}[scale=1
@@ -15,6 +17,8 @@
         \foreach \month[count=\m] in {Aug,Sep,Oct,Nov,Dec,Jan,Feb,Mar,Apr,May,Jun,Jul}
         \node[] (year\y month\m) at (\m,-\gap * \y cm) {{\month}};
     }
+
+    \node[left=of year1,rotate=90] {MSc Calendar};
 
     % Orientation.
     \def\cl{red}

@@ -4,10 +4,22 @@ author : NCBS Bangalore
 date : \today 
 header-includes :
     - \usepackage[top=3cm, bottom=3cm, left=3cm, right=4cm]{geometry}
+    - \usepackage[misc]{ifsym}
     - \usepackage[sfdefault,light]{FiraSans}
     - \usepackage{fancyhdr}
     - \pagestyle{fancy}
 ---
+
+\newcommand\MAILTO[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
+
+**Disclaimer**
+The purpose of this handbook is to outline the procedures for students
+to receive a degree. This handbook will be updated annually in August.
+Any major changes made prior to that time will be posted to our website
+with notification to all graduate students by email. The information in
+this handbook should be viewed as guidelines and are subject to change
+depending on the policies of the Institutes.
+
 
 # HONOUR CODE
 Our community operates on a principle of trust. Most research materials
@@ -17,7 +29,7 @@ of cheating, plagiarism, or falsification of data is unacceptable and
 will invite appropriate consequences.
 
 \newpage
-# Academic Calendar
+# Academic Calendar {#academic_calendar}
 
 It is the student’s responsibility to ensure they meet all requirements
 and deadlines.
@@ -62,38 +74,30 @@ and deadlines.
 
   Room booking           Ambili D <https://ncbs.res.in/hippo>             All room bookings
 
-  Transport              <transport@ncbs.res.in>                         Local transport
+  Transport              <transport@ncbs.res.in>                          Local transport
   --------------------------------------------------------------------------------------------------------------
 
 ## Academic Office 
-All student academic matters, including scheduling
+
+[Academic Office](mailto:acadoffice@ncbs.res.in) \MAILTO{}{acadoffice@ncbs.res.in}
+
+[Ms. K. S. Vishalakshi](mailto:ksvishal@ncbs.res.in) \MAILTO{}{ksvishal@ncbs.res.in}
+
+**For what?** All student academic matters, including scheduling
 Annual Work Seminars, submission of Thesis Advisory Committee reports,
 course transcripts, interactions with MU or TIFR, and thesis submission.
 
-Contact acadoffice@ncbs.res.in
-
-Ms. K. S. Vishalakshi (ksvishal@ncbs.res.in)
 
 ## Establishment and Administrative Office
+[Admin help](mailto:adminhelp@ncbs.res.in) \MAILTO{ }{adminhelp@ncbs.res.in} 
+\newline 
+[Mr. Ashok Rao](mailto:ashok@ncbs.res.in) \MAILTO{ }{ashok@ncbs.res.in} \newline 
+\MAILTO{Head Admin }{headadmin@ncbs.res.in}
 
-Joining formalities, extramural fellowships, interface with outside agencies.
-
-Contact adminhelp@ncbs.res.in
-
-Mr. Ashok Rao (<ashok@ncbs.res.in>)
-
-headadmin@instem.res.in
-
+**For what?** Joining formalities, extramural fellowships, interface with outside agencies.
 
 \newpage
 \tableofcontents
-
-The purpose of this handbook is to outline the procedures for students
-to receive a degree. This handbook will be updated annually in August.
-Any major changes made prior to that time will be posted to our website
-with notification to all graduate students by email. The information in
-this handbook should be viewed as guidelines and are subject to change
-depending on the policies of the Institutes.
 
 # Programmes of study
 
@@ -336,19 +340,14 @@ will lose priority for allotment of a single room.
 
 ## Credit Requirements 
 
-
-Category PhD Int-PhD
-
-Coursework 16 22
-
-Laboratory Rotations 4 6
-
-Research Performance 20 22
-
-Thesis 30 30
+ **Category**         | **PhD** | **IntPhD**
+ ---------------------|---------|---------
+ Coursework           |  16     |  22   
+ LaboratoryRotations  |  4      |  6   
+ ResearchPerformance  |  20     |  22 
+ Thesis               |  30     |  30
 
 # MSc-by-Research
-
 ## Selection
  Students offered a position in the MSc-by-Research
 programme via the Int-PhD interviews can be appointed on grants funded
@@ -404,13 +403,11 @@ is mandatory for all students.
 start writing a thesis. There are no extensions in the MSc Programme.
 
 ## Credit requirements 
-
-
-Coursework 12
-
-Research Performance 24
-
-Thesis 24
+  --------------------- ----
+  Coursework              12
+  Laboratory Rotations    24
+  Thesis                  24
+  --------------------- ----
 
 ## MSc in Wildlife Biology and Conservation
 
@@ -531,10 +528,10 @@ working in laboratories and on field trips.
 
 ## Credit requirements 
 
-
-Coursework 50 (minimum)
-
-Thesis 10
+  --------------------- ----
+  Coursework (min)      50
+  Thesis                10
+  --------------------- ----
 
 # Graduate Coursework
 
@@ -584,36 +581,41 @@ the first meeting, the weekly schedule, and the detailed syllabus, will
 be available one semester in advance.
 
 ## Grades 
- We follow a letter grading system based on final course
-marks
 
-A+: 90-100; A 80-89; B+: 70-79; B 60-69; C+: 50-59 (Pass); C 40-49
-Fail
+We follow a letter grading system based on final course marks.
 
+  **Letter Grade** | **Marks**
+  -----------------|------
+  A+               | 90-100
+  A                | 80-89
+  B+               | 70-79
+  B                | 60-69
+  C+               | 50-59
+  Fail             | < 50
+ 
 Instructors may set a higher pass grade for a specific course. This
 information will be provided to students at the beginning of the course.
 
 ## Registering for courses 
- Students should attend the first meeting of
-any course they wish to credit. Courses can be dropped within a period
-of one month from the first meeting, unless stated otherwise by the
-instructor. Dropping a course after one month/or the date specified
-automatically results in a fail grade, which will appear on the
-transcript. Students may audit a course without credit, with prior
+
+Students should attend the first meeting of any course they wish to credit.
+Courses can be dropped within a period of one month from the first meeting,
+unless stated otherwise by the instructor. Dropping a course after one month/or
+the date specified automatically results in a fail grade, which will appear on
+the transcript. Students may audit a course without credit, with prior
 permission from the instructor.
 
 ## Registering for courses at other academic institutions 
- Courses
-offered outside the campus, at institutes including IISc, RRI, and
-JNCASR be taken for credit. If students wish to take an outside course,
-they must first get the permission of their supervisor or the Head
-Academics during lab rotations. Students must register for these courses
-through the Academic Office. It is not permitted to drop an outside
-course once registered. Course fees, if any, will be deducted from the
-student’s contingency grant, but this amount will be reimbursed provided
-the student obtains a grade of B or above as per the grading system of
-the Institute concerned. Each institution follows its own calendar so
-external courses must be planned well in advance.
+
+Courses offered outside the campus, at institutes including IISc, RRI, and
+JNCASR be taken for credit. If students wish to take an outside course, they
+must first get the permission of their supervisor or the Head Academics during
+lab rotations. Students must register for these courses through the Academic
+Office. It is not permitted to drop an outside course once registered. Course
+fees, if any, will be deducted from the student’s contingency grant, but this
+amount will be reimbursed provided the student obtains a grade of B or above as
+per the grading system of the Institute concerned. Each institution follows its
+own calendar so external courses must be planned well in advance.
 
 ## Exceptions 
  Any issues not listed here (e.g. transfer of credits,
@@ -640,9 +642,9 @@ journal clubs held on a weekly basis is mandatory for all students.
 ## Coursework credit requirements 
 
 
-PhD at TIFR Int-PhD at TIFR MSc at TIFR PhD at MU
-
-16 22 12 12
+ PhD at TIFR | Int-PhD at TIFR | MSc at TIFR | PhD at MU
+ ------------|-----------------|-------------|----------
+ 16          | 22              |  12         |  12
 
 # Comprehensive Examination
 
@@ -691,16 +693,13 @@ have to be supported by published manuscript.
 
 ## Recommended timelines 
 
+- CE Part I (A and B) are offered each year in June and December.
+- PhD CE Part I should be cleared by Y2 December, and Part II by Y2 June.
+- Int-PhD CE Part I should be cleared by Y2 June, and Part II by Y3 December.
 
-CE Part I A&B are offered each year in June and December.
+Also see [Academic Calendar](#academic_calendar).
 
-PhD CE Part I should be cleared by Y2 December, and Part II by Y2 June.
-
-Int-PhD CE Part I should be cleared by Y2 June, and Part II by Y3
-December.
-
-
-# Registration and Renewals
+# Registration and Renewals 
 
 The detailed checklist of forms and documents required for registration
 at TIFR and MU is available at the Academic Office. Please ensure you
@@ -714,75 +713,66 @@ must be renewed annually, and runs from Aug 1 – July 31 during any
 academic year.
 
 ## Registration deadlines 
- The Academic Office will send an email
-reminder to all students one month prior to the registration deadline.
-Timely registration is the student’s responsibility and should be
-coordinated with the Academic office. Please do not interact directly
-with TIFR or MU. Requests for extensions should be submitted by the
-Thesis Supervisor to Head Academics a minimum of 6 months prior to the
-deadline. The request has to be discussed with the student and approved
-by the TAC.
 
-PhD June 30, Y2
+The Academic Office will send an email reminder to all students one month prior
+to the registration deadline.  Timely registration is the student’s
+responsibility and should be coordinated with the Academic office. Please do not
+interact directly with TIFR or MU. Requests for extensions should be submitted
+by the Thesis Supervisor to Head Academics a minimum of 6 months prior to the
+deadline. The request has to be discussed with the student and approved by the
+TAC.
 
-Int-PhD January 15, Y3
+ ---------------  -----------------
+ PhD              June 30, Y2 
+ Int-PhD          January 15, Y3
+ MSc-by-Research  September 30, Y2
+ ---------------  -----------------
 
-MSc-by-Research September 30, Y2
+Also see [Academic Calendar](#academic_calendar).
 
 ## Submission of registration packages to the Academic Office 
- The
-completed registration package, with all signatures, must reach the
-Academic Office one month before the registration deadline. The office
-requires this time to obtain approvals from the Convenor of the Biology
-Board, Head Academics, and Director before forwarding the package to the
-Graduate Studies Office at TIFR or MU. Incomplete packages will not be
-forwarded and may result in discontinuation in the academic programme.
+
+The completed registration package, with all signatures, must reach the Academic
+Office one month before the registration deadline. The office requires this time
+to obtain approvals from the Convenor of the Biology Board, Head Academics, and
+Director before forwarding the package to the Graduate Studies Office at TIFR or
+MU. Incomplete packages will not be forwarded and may result in discontinuation
+in the academic programme.
 
 ## TIFR registration requirements 
 
 
-1\. Abstract and scientific report submitted to the TAC.
-
-2\. Report of the TAC recommending registration.
-
-3\. Course transcripts including the CE Part I report available at the
-Academic Office.
-
-4\. Statement verifying payment of TIFR registration fees available at
-the Academic Office.
-
-5\. TIFR registration form signed by the student and the Thesis
-Supervisor.
+1. Abstract and scientific report submitted to the TAC.
+2. Report of the TAC recommending registration.
+3. Course transcripts including the CE Part I report available at the
+   Academic Office.
+4. Statement verifying payment of TIFR registration fees available at
+   the Academic Office.
+5. TIFR registration form signed by the student and the Thesis
+   Supervisor.
 
 ## MU registration requirements 
 
 
-1\. Abstract and scientific report in MU format submitted to the TAC.
+1. Abstract and scientific report in MU format submitted to the TAC.
+2. Report of the TAC recommending registration.
+3. Course transcripts including the CE Part I report available at the
+   Academic Office.
+4. Statement verifying payment of MU registration fees available at the
+   Academic Office.
+5. MU registration form signed by the student and the Thesis Supervisor.
+6. Completed MU application form.
+7. Copy of statutory approvals for research involving animals, stem
+    cells or human subjects.
+8. MSc marks sheet and Degree Certificate.
+9. Presentation made in person at MU. Travel will be arranged by the
+    Academic Office.
 
-2\. Report of the TAC recommending registration.
-
-3\. Course transcripts including the CE Part I report available at the
-Academic Office.
-
-4\. Statement verifying payment of MU registration fees available at the
-Academic Office.
-
-5\. MU registration form signed by the student and the Thesis Supervisor.
-
-6\. Completed MU application form.
-
-7\. Copy of statutory approvals for research involving animals, stem
-cells or human subjects.
-
-8\. MSc marks sheet and Degree Certificate.
-
-9\. Presentation made in person at MU. Travel will be arranged by the
-Academic Office.\
 ## Assessments and renewals 
  Studentship and the associated fellowship
 is renewed on an annual basis, subject to satisfactory performance in
 graduate work. July 31st marks the end of studentship unless renewed
-earlier in the year based on the TAC report submitted in June. For
+earlier in the year based on the TAC report submitted in June. Fo
 renewal, primary importance is given to progress on thesis research but
 students are also expected to perform well in coursework, AWS, and
 journal clubs. Progress in all these areas is evaluated by the TAC. If
@@ -1059,37 +1049,33 @@ Cell and Internal Complaints Committee (ICC) deals with issues related
 to sexual harassment, gender discrimination and professional misconduct
 at the workplace.
 
-Ethics Policy www.ncbs.res.in/ethics
-
-Harassment Policy
-www.ncbs.res.in/sitefiles/CampusHarassmentPolicyDec2013.pdf
-
-Women’s Cell and ICC https//www.ncbs.res.in/women%27s\_cell
+- [Ethics Policy](www.ncbs.res.in/ethics) <https://ncbs.res.in/ethics>
+- [Harassment Policy](www.ncbs.res.in/sitefiles/CampusHarassmentPolicyDec2013.pdf) <https://ncbs.res.in/sitefiles/CampusHarassmentPolicyDec2013.pdf>
+- [Women’s Cell and ICC](https://www.ncbs.res.in/women%27s\_cell) <https://www.ncbs.res.in/women%27s\_cell> (broken link)
 
 # Laboratory Safety and Etiquette
 
-It is your responsibility to ensure that there is no sabotage, willful
-damage, fraud or theft of common equipment or supplies. Unauthorized use
-of any campus service, equipment, or other properties including the NCBS
-or inStem name and seal, is forbidden.
+It is your responsibility to ensure that there is no sabotage, willful damage,
+fraud or theft of common equipment or supplies. Unauthorized use of any campus
+service, equipment, or other properties including the NCBS or inStem name and
+seal, is forbidden.
 
 ## Laboratory Safety 
- All students are required to attend the
-Laboratory Safety Course and pass the Safety Test to activate their ID
-cards and Fellowships. Most students will take this course during
-Orientation; it is also offered on a monthly basis. Every laboratory and
-facility will have an emergency evacuation plan and an emergency contact
-person. In the event of an emergency, please ensure your safety first,
+
+All students are required to attend the Laboratory Safety Course and pass the
+Safety Test to activate their ID cards and Fellowships. Most students will take
+this course during Orientation; it is also offered on a monthly basis. Every
+laboratory and facility will have an emergency evacuation plan and an emergency
+contact person. In the event of an emergency, please ensure your safety first,
 then report the emergency to the appropriate contact person, to the main
-reception, or to security. First-aid kits, spill kits, fire
-extinguishers and fire blankets, eye washes and safety showers are
-available in all laboratories or nearby common areas. Please familiarise
-yourself with the use of these safety systems. To minimise the risk of
-an accident, not work alone in the laboratory. Use lab coats, gloves,
-and fume hoods to avoid unnecessary exposure to laboratory chemicals.
-You should be aware of sterilisation and waste disposal protocols, for
-chemical and biological waste. Do not use any hazardous chemicals until
-you have read the material safety data sheet and understood the
+reception, or to security. First-aid kits, spill kits, fire extinguishers and
+fire blankets, eye washes and safety showers are available in all laboratories
+or nearby common areas. Please familiarise yourself with the use of these
+safety systems. To minimise the risk of an accident, not work alone in the
+laboratory. Use lab coats, gloves, and fume hoods to avoid unnecessary exposure
+to laboratory chemicals.  You should be aware of sterilisation and waste
+disposal protocols, for chemical and biological waste. Do not use any hazardous
+chemicals until you have read the material safety data sheet and understood the
 necessary precautions.
 
 ## Responsible use of common equipment 
@@ -1118,118 +1104,112 @@ misuse of equipment is identical to vandalism, and will be treated as
 such.
 
 ## Rad Lab 
- The Radioactive Laboratory facility, referred to as the
-‘Rad Lab’, has been classified as a TYPE 1 radioactive laboratory. The
-radioactive nuclei that the Rad Lab is equipped to handle are H-3, P-32,
-C-14, Fe-55, and Ca-45. To become a Rad Lab user you must submit an
-application form available on the intranet, and pass a stringent test
-conducted by the Campus Radiation Safety Officer, Dr. P.V Shivaprasad.
-You must also go through a rigorous orientation programme under the
-supervision of the Rad Lab student representatives. One of the most
-important aspects of the orientation programme and tests the candidates
-must be aware of are the specific protocols for disposal of waste
-materials generated during experiments performed in the Rad Lab. There
-are specific methods of disposal for both solid and liquid wastes as
-well as the kind of nuclei being used. Once a potential user has cleared
-the requirements for becoming a user they must to apply for Rad Lab
-badges, which could take between 6-8 weeks to obtain.
+
+The Radioactive Laboratory facility, referred to as the ‘Rad Lab’, has been
+classified as a TYPE 1 radioactive laboratory. The radioactive nuclei that the
+Rad Lab is equipped to handle are H-3, P-32, C-14, Fe-55, and Ca-45. To become a
+Rad Lab user you must submit an application form available on the intranet, and
+pass a stringent test conducted by the Campus Radiation Safety Officer, Dr. P.V
+Shivaprasad.  You must also go through a rigorous orientation programme under
+the supervision of the Rad Lab student representatives. One of the most
+important aspects of the orientation programme and tests the candidates must be
+aware of are the specific protocols for disposal of waste materials generated
+during experiments performed in the Rad Lab. There are specific methods of
+disposal for both solid and liquid wastes as well as the kind of nuclei being
+used. Once a potential user has cleared the requirements for becoming a user
+they must to apply for Rad Lab badges, which could take between 6-8 weeks to
+obtain.
 
 ## Animal care and ethics 
- The use of animal models is often an
-essential part of biomedical research, and raises important ethical
-concerns. The challenge is to strike the right balance between the
-obvious costs and potential benefits in a manner that adequately
-addresses all ethical issues pertaining to the use of animals in
-research. In particular, if such research involves pain and suffering of
-animals, we must ensure that it is truly necessary for the research; it
-is done as humanely as possible; it is done by paying sufficient
-attention to the impact any procedure may have on the animal; and that
-the potential benefits of the outcome of such research justify the use
-of animals. Most importantly, laboratory animals have no say in how they
-are used in research. The moral responsibility, therefore, falls
-entirely on the researcher to ensure ethical treatment and care of these
-animals. Moreover, scientific data gathered from animals that are not
-healthy or are in distress are bound to be questionable in terms of
-quality and reproducibility. In short, researchers need to respect
-animal subjects and be fully aware of the core ethical concerns
-surrounding the use of animals in research. To ensure that we maintain
-high standards of animal care, specific guidelines will have to be
-followed by all users. Some of these include animal users have to be
-registered with the Animal Care Facility and abide by its rules; animal
-users have to be listed on Animal Protocol Forms used by individual
-labs; users must follow detailed guidelines for ensuring that animals
-remain healthy and all safety regulations are followed diligently; users
-must maintain comprehensive records so that animal use and compliance
-with regulations can be monitored. More detailed guidelines for using
-the Animal Care Facility will be provided at the time of registration
-with the facility.
+
+The use of animal models is often an essential part of biomedical research, and
+raises important ethical concerns. The challenge is to strike the right balance
+between the obvious costs and potential benefits in a manner that adequately
+addresses all ethical issues pertaining to the use of animals in research. In
+particular, if such research involves pain and suffering of animals, we must
+ensure that it is truly necessary for the research; it is done as humanely as
+possible; it is done by paying sufficient attention to the impact any procedure
+may have on the animal; and that the potential benefits of the outcome of such
+research justify the use of animals. Most importantly, laboratory animals have
+no say in how they are used in research. The moral responsibility, therefore,
+falls entirely on the researcher to ensure ethical treatment and care of these
+animals. Moreover, scientific data gathered from animals that are not healthy or
+are in distress are bound to be questionable in terms of quality and
+reproducibility. In short, researchers need to respect animal subjects and be
+fully aware of the core ethical concerns surrounding the use of animals in
+research. To ensure that we maintain high standards of animal care, specific
+guidelines will have to be followed by all users. Some of these include animal
+users have to be registered with the Animal Care Facility and abide by its
+rules; animal users have to be listed on Animal Protocol Forms used by
+individual labs; users must follow detailed guidelines for ensuring that animals
+remain healthy and all safety regulations are followed diligently; users must
+maintain comprehensive records so that animal use and compliance with
+regulations can be monitored. More detailed guidelines for using the Animal Care
+Facility will be provided at the time of registration with the facility.
 
 ## Where to go for help 
- If equipment is broken when you try to use it
-or malfunctions during use, put it in the log, and send an email to the
-Instrumentation Section and to Mr. P. C. Gautam. Equipment does break
-even when used carefully. We do not penalize anyone for breakage in
-normal use. It is an abuse of trust to run away when it happens to you,
-and a violation of the Honour Code If it isn't fixed at once then you
-will spoil the work of others.
 
-Instrumentation ins@ncbs.res.in
+If equipment is broken when you try to use it or malfunctions during use, put it
+in the log, and send an email to the Instrumentation Section and to Mr. P. C.
+Gautam. Equipment does break even when used carefully. We do not penalize anyone
+for breakage in normal use. It is an abuse of trust to run away when it happens
+to you, and a violation of the Honour Code If it isn't fixed at once then
+you will spoil the work of others.
 
-Mr. P. C. Gautam pchandra@ncbs.res.in
+- \MAILTO{Instrumentation}{ins@ncbs.res.in}
+- \MAILTO{Mr. P. C. Gautam}{pchandra@ncbs.res.in}
 
 ## Statutory Research Committees 
- As required by national policies,
-specific research committees have been constituted to ensure the safety
-of the researchers and the research subjects, and the welfare of the
-environment. The committees oversee particular research areas such as
-recombinant DNA work, biohazard and radioactive work; research on animal
-and human subjects; and Stem cell work. Please contact the Dean’s Office
+
+As required by national policies, specific research committees have been
+constituted to ensure the safety of the researchers and the research subjects,
+and the welfare of the environment. The committees oversee particular research
+areas such as recombinant DNA work, biohazard and radioactive work; research on
+animal and human subjects; and Stem cell work. Please contact the Dean’s Office
 (dean@ncbs.res.in) if you require any specific information about these
 committees.
 
 ## Institutional BioSafety committee (IBSC): 
- The IBSC committee is
-responsible for reviewing all research proposals that involve the use of
-recombinant DNA and/or pathogenic organisms, human samples and ensuring
-that the proposed research complies with the Department of Biotechnology
-(DBT) guidelines. The committee has a mandate to regulate all work
-involving recombinant DNA, and is charged with ensuring that no
-genetically modified organisms are released into the environment without
-adequate study carried out with due precautions. The role of the
-committee is also to ensure the safety of the personnel and to ensure
-that the laboratory practices comply with the regulations. The IBSC
-holds meetings once every 6 months to review proposals, reports to the
-DBT. The IBSC, with external members including one appointed by the DBT,
-examines proposals put before it on the basis of the organisms involved
-and biosafety issues. The IBSC also considers projects for Safety issues
-even if they do not involve recombinant DNA.
+
+The IBSC committee is responsible for reviewing all research proposals that
+involve the use of recombinant DNA and/or pathogenic organisms, human samples
+and ensuring that the proposed research complies with the Department of
+Biotechnology (DBT) guidelines. The committee has a mandate to regulate all work
+involving recombinant DNA, and is charged with ensuring that no genetically
+modified organisms are released into the environment without adequate study
+carried out with due precautions. The role of the committee is also to ensure
+the safety of the personnel and to ensure that the laboratory practices comply
+with the regulations. The IBSC holds meetings once every 6 months to review
+proposals, reports to the DBT. The IBSC, with external members including one
+appointed by the DBT, examines proposals put before it on the basis of the
+organisms involved and biosafety issues. The IBSC also considers projects for
+Safety issues even if they do not involve recombinant DNA.
 
 ## Institutional Animal Ethics Committee (IAEC): 
- In order to ensure
-that all animals involved in research receive humane care and treatment,
-the Institutional Animal Ethics Committee (IAEC) reviews the proposed
-use of animals for research to ensure that the procedures followed are
-indeed required for the advancement of knowledge in a particular field
-of research. The committee also inspects and monitors the animal
-facilities at the institute in order to ascertain that all regulations
-stipulated by the animal welfare guidelines in India are complied with.
-The IAEC meets twice in a year to review research proposals involving
-animal subjects.
+
+In order to ensure that all animals involved in research receive humane care and
+treatment, the Institutional Animal Ethics Committee (IAEC) reviews the proposed
+use of animals for research to ensure that the procedures followed are indeed
+required for the advancement of knowledge in a particular field of research. The
+committee also inspects and monitors the animal facilities at the institute in
+order to ascertain that all regulations stipulated by the animal welfare
+guidelines in India are complied with.  The IAEC meets twice in a year to review
+research proposals involving animal subjects.
 
 ## Institutional Ethics committee (IEC): 
- It is essential to safeguards
-the rights and welfare of human subjects, and the rights of the
-researcher to carry out legitimate investigation as well as the
-Institute's reputation for the research conducted and sponsored by it.
-In this context we ensure that the regulations laid by the Indian
-Council of Medical Research (ICMR), are complied with. The committee
-meets every 6 months to scrutinize, examine, and review proposals to
-ensure that the research projects involving human subjects and/or
-samples, undertaken at on campus or elsewhere by any member of NCBS or
-inStem adhere to the institute and ICMR ethical guidelines.
 
-**Institutional Committee for Stem Cell Research and Therapy
-(IC-SCRT):** In view of collaborative efforts to include use of stem
+It is essential to safeguards the rights and welfare of human subjects, and the
+rights of the researcher to carry out legitimate investigation as well as the
+Institute's reputation for the research conducted and sponsored by it.  In this
+context we ensure that the regulations laid by the Indian Council of Medical
+Research (ICMR), are complied with. The committee meets every 6 months to
+scrutinize, examine, and review proposals to ensure that the research projects
+involving human subjects and/or samples, undertaken at on campus or elsewhere by
+any member of NCBS or inStem adhere to the institute and ICMR ethical
+guidelines.
+
+**Institutional Committee for Stem Cell Research and Therapy (IC-SCRT):** 
+In view of collaborative efforts to include use of stem
 cells, an institutional committee, constituted in accordance with the
 DBT-ICMR Guidelines for Stem Cell research, reviews all work that
 involves stem cells. The Committee is registered with the National Apex
@@ -1240,167 +1220,147 @@ issues related to stem cell research.
 
 # Computer and network use
 
-Network access, email, and support are shared facilities, meaning that
-all students, faculty and staff can use them. Hardware and software are
-usually the concern of individual labs. This section lists shared
-facilities and rules for accessing them, and makes strong suggestions
-about security, privacy, and data management. The primary purpose of
-computer resources is to support academic work, and this is reflected in
-our policies.
+Network access, email, and support are shared facilities, meaning that all
+students, faculty and staff can use them. Hardware and software are usually the
+concern of individual labs. This section lists shared facilities and rules for
+accessing them, and makes strong suggestions about security, privacy, and data
+management. The primary purpose of computer resources is to support academic
+work, and this is reflected in our policies.
 
 ## Overview of facilities 
- The campus computer infrastructure consists
-of a local-area network connecting all parts of campus using a 10
-Gigabit fibre; a secured Wi-Fi network that reaches most parts of
-campus; file, mail and database servers, as well as firewalls and other
-servers; internet links; a high-performance computing facility; a
-centralised storage facility. In addition, our software infrastructure
-includes site licenses for commonly used software, including Windows,
-MS Office, Adobe Suite and Matlab; web services including the webpages
-and an intranet; internal software systems for purchase, personnel and
-records. The computer services provide technical service and support
-for mail account management; NCBS- and inStem-owned hardware; web
-services; NCBS- and inStem-owned software; open source software;
-special-purpose printing.
+
+The campus computer infrastructure consists of a local-area network connecting
+all parts of campus using a 10 Gigabit fibre; a secured Wi-Fi network that
+reaches most parts of campus; file, mail and database servers, as well as
+firewalls and other servers; internet links; a high-performance computing
+facility; a centralised storage facility. In addition, our software
+infrastructure includes site licenses for commonly used software, including
+Windows, MS Office, Adobe Suite and Matlab; web services including the webpages
+and an intranet; internal software systems for purchase, personnel and records.
+The computer services provide technical service and support for mail account
+management; NCBS- and inStem-owned hardware; web services; NCBS- and
+inStem-owned software; open source software; special-purpose printing.
 
 ## User responsibilities 
- Use resources effectively for academic
-purposes, and protect the interests of all users through good etiquette
-and good security.
 
-Do not violate privacy. Please do not read any files belonging to other
-people, or look at their screen while they are working or reading email.
-Common PCs have no security mechanism to prevent people from reading
-each other's files; this does not amount to permission to read such
-files.
+Use resources effectively for academic purposes, and protect the interests of
+all users through good etiquette and good security.
 
-Don't spam, i.e., do not send unnecessary email to a large set of people
-who are not interested in your message. Be particularly conservative in
-your use of the aliases 'all', 'student' and 'faculty'. Repeated misuse
-is grounds for account blockage.
-
-Don’t reply to ‘all’. A common mistake is to reply to all recipients of
-a mail, which may include everybody on campus. When a mail is sent to a
-mailing list and you feel you must reply, please do not click the
-‘reply-to-all’ option.
-
-Don’t get personal. Even if you are raising an issue of concern to many,
-don't target individuals in a message sent to a mailing list. If there
-are specific individuals involved in some contentious issue, it is
-better to email them or meet them personally to solve the issue.
-
-Don't flame, that is, do not write emails when you are angry. Especially
-do not send angry mails to a lot of people or a mailing list when you
-are angry. You will regret it. Email is a poor substitute for personal
-discussions.
-
-Do not waste bandwidth. Bandwidth is costly and is needed for journal
-downloads, database access, and other academic requirements. We have a
-limited data rate, and it is meant specifically for academic work.
-Emails usually use far less bandwidth than anything else. Avoid large
-attachments. It is a misuse of institute resources to download music or
-pictures, or to use chat, Skype, and other systems for personal use.
-These are all very serious bandwidth consumers and block legitimate
-access for academic use.
-
-Do not try to reconfigure any of the common machines. Our systems
-administrators spend a lot of time trying to get everything to work
-together, but even more time fixing up machines that have been messed
-up.
-
-Don't waste printer paper. If you have a lot of data to examine, it is
-better left on the computer and viewed on the screen. Don’t print out
-papers to look at if you only plan to give them a brief glance do this
-on screen instead.
-
-Do not view any offensive material. Porn does not belong in the
-workspace.
+- Do not violate privacy. Please do not read any files belonging to other
+  people, or look at their screen while they are working or reading email.
+  Common PCs have no security mechanism to prevent people from reading each
+  other's files; this does not amount to permission to read such files.
+- Don't spam, i.e., do not send unnecessary email to a large set of people who
+  are not interested in your message. Be particularly conservative in your use
+  of the aliases 'all', 'student' and 'faculty'. Repeated misuse is grounds for
+  account blockage.
+- Don’t reply to ‘all’. A common mistake is to reply to all recipients of a
+  mail, which may include everybody on campus. When a mail is sent to a mailing
+  list and you feel you must reply, please do not click the ‘reply-to-all’
+  option.
+- Don’t get personal. Even if you are raising an issue of concern to many, don't
+  target individuals in a message sent to a mailing list. If there are specific
+  individuals involved in some contentious issue, it is better to email them or
+  meet them personally to solve the issue.
+- Don't flame, that is, do not write emails when you are angry. Especially do
+  not send angry mails to a lot of people or a mailing list when you are angry.
+  You will regret it. Email is a poor substitute for personal discussions.
+- Do not waste bandwidth. Bandwidth is costly and is needed for journal
+  downloads, database access, and other academic requirements. We have a limited
+  data rate, and it is meant specifically for academic work.  Emails usually use
+  far less bandwidth than anything else. Avoid large attachments. It is a misuse
+  of institute resources to download music or pictures, or to use chat, Skype,
+  and other systems for personal use.  These are all very serious bandwidth
+  consumers and block legitimate access for academic use.
+- Do not try to reconfigure any of the common machines. Our systems
+  administrators spend a lot of time trying to get everything to work together,
+  but even more time fixing up machines that have been messed up.
+- Don't waste printer paper. If you have a lot of data to examine, it is better
+  left on the computer and viewed on the screen. Don’t print out papers to look
+  at if you only plan to give them a brief glance do this on screen instead.
+- Do not view any offensive material. Porn does not belong in the workspace.
 
 ## Backups 
- There is a key distinction between backup and archival.
-Backup is intended to protect all current data, and to reconstruct disks
-when they fail. Backup tapes are typically overwritten with more recent
-data. Archival is intended to keep a permanent record of data even if it
-is no longer in active use. Archival records are never overwritten and
-are usually stored separately. For scientific data, both forms are
-essential. It is always recommended to have at least 3 copies for data
-for archival. We strongly encourage laboratories to backup data on a
-weekly basis; it is not possible to back up large datasets across the
-network. There is an incremental backup of the mails and web server
-everyday with a full backup on Sundays. Other forms of backup and
-archival are the responsibility of individual users and labs. Many labs
-have GNU/Linux-based server machines for large datasets and image data.
-The recommended archival medium is to tape. The campus has multiple tape
-safes for offsite data storage and archival. Please use these in case
-there is a fire or other accident in your lab. As a further layer of
-backup, we recommend RAID configuration of your file server, so that
-data loss will not occur with individual disk failure. This is not a
-substitute for tape archival, but it does lessen the risk and downtime
-when individual disks fail. A key part of data backup and archival is
-managing records of what is in each tape. Archival is pretty useless
-unless you know where to get each datum.
+
+There is a key distinction between backup and archival.  Backup is intended to
+protect all current data, and to reconstruct disks when they fail. Backup tapes
+are typically overwritten with more recent data. Archival is intended to keep a
+permanent record of data even if it is no longer in active use. Archival records
+are never overwritten and are usually stored separately. For scientific data,
+both forms are essential. It is always recommended to have at least 3 copies for
+data for archival. We strongly encourage laboratories to backup data on a weekly
+basis; it is not possible to back up large datasets across the network. There is
+an incremental backup of the mails and web server everyday with a full backup on
+Sundays. Other forms of backup and archival are the responsibility of individual
+users and labs. Many labs have GNU/Linux-based server machines for large
+datasets and image data.  The recommended archival medium is to tape. The campus
+has multiple tape safes for offsite data storage and archival. Please use these
+in case there is a fire or other accident in your lab. As a further layer of
+backup, we recommend RAID configuration of your file server, so that data loss
+will not occur with individual disk failure. This is not a substitute for tape
+archival, but it does lessen the risk and downtime when individual disks fail. A
+key part of data backup and archival is managing records of what is in each
+tape. Archival is pretty useless unless you know where to get each datum.
 
 ## Security 
- Security of the servers is treated seriously and every
-effort is made to ensure that data is not compromised. All users have to
-be part of this process. Please have reasonably secure passwords. Do not
-use simple passwords like your initials, birth date, dictionary based
-words etc. If your password is cracked the whole institute pays for it
-as the server gets compromised. Your accounts are yours alone. Do not
-give your passwords to anyone. Use Secure Shell (ssh) to connect to your
-lab servers if permitted. In rare cases the computer administrators may
-have to freeze accounts if they detect strange remote accesses or other
-suspicious activity. They will try to contact the account holders as
-soon as possible to try to sort things out.
+
+Security of the servers is treated seriously and every effort is made to ensure
+that data is not compromised. All users have to be part of this process. Please
+have reasonably secure passwords. Do not use simple passwords like your
+initials, birth date, dictionary based words etc. If your password is cracked
+the whole institute pays for it as the server gets compromised. Your accounts
+are yours alone. Do not give your passwords to anyone. Use Secure Shell (ssh) to
+connect to your lab servers if permitted. In rare cases the computer
+administrators may have to freeze accounts if they detect strange remote
+accesses or other suspicious activity. They will try to contact the account
+holders as soon as possible to try to sort things out.
 
 ## Webmail 
- The website for NCBS and inStem mail can be reached at
-mail.ncbs.res.in and mail.instem.res.in, respectively. Webmail services
-are provided to all campus personnel and to visitors who are here for
-six months or longer, upon recommendation of their group leader. We try
-to provide abundant but not unlimited disk space on the mail server. Be
-prudent about the mails you save in your mailbox, and consider using
-offline mail clients such as Thunderbird or Mac OSX Mail to save mail on
-your local machine. If you exceed the main quota you will not be able to
-see incoming mail, so clean out your mailbox periodically. Your mail
-account will be deleted when you leave the campus. With special
-requests, this can be extended by one month. If you have important data
-on the mail server, please give that data to your PI before leaving the
-campus. Users can access webmail or other mail clients from anywhere on
-the internet. A few users with specific needs to access machines inside
-the network may be given VPN (virtual private network) access if
-approved by the Computer Committee.
+
+The website for NCBS and inStem mail can be reached at <https://mail.ncbs.res.in> and
+<https://mail.instem.res.in>, respectively. Webmail services are provided to all campus
+personnel and to visitors who are here for six months or longer, upon
+recommendation of their group leader. We try to provide abundant but not
+unlimited disk space on the mail server. Be prudent about the mails you save in
+your mailbox, and consider using offline mail clients such as Thunderbird or Mac
+OSX Mail to save mail on your local machine. If you exceed the main quota you
+will not be able to see incoming mail, so clean out your mailbox periodically.
+Your mail account will be deleted when you leave the campus. With special
+requests, this can be extended by one month. If you have important data on the
+mail server, please give that data to your PI before leaving the campus. Users
+can access webmail or other mail clients from anywhere on the internet. A few
+users with specific needs to access machines inside the network may be given VPN
+(virtual private network) access if approved by the Computer Committee.
 
 ## Personal versus academic use 
- The campus site licenses for Windows,
-Adobe Suite, Matlab etc. apply only to academic machines. Please do not
-ask staff to install these on personal machines. Individual labs manage
-their own software purchases. The computer services can only install
-such software, as per the terms of their license, on lab machines. Many
-people use personal laptops in the lab, including laptops bought on
-student contingency grants. If your personally owned machine doesn’t
-work, please do not ask the staff to fix it. They will be happy to give
-you contact information for service vendors. Even if a machine is used
-for academic purposes, if it is not institute-owned we cannot put it
-under the institute service and licensing umbrella. Please do not
-install personal WiFi anywhere on campus, it will interfere with the
-campus wireless.
+
+The campus site licenses for Windows, Adobe Suite, Matlab etc. apply only to
+academic machines. Please do not ask staff to install these on personal
+machines. Individual labs manage their own software purchases. The computer
+services can only install such software, as per the terms of their license, on
+lab machines. Many people use personal laptops in the lab, including laptops
+bought on student contingency grants. If your personally owned machine doesn’t
+work, please do not ask the staff to fix it. They will be happy to give you
+contact information for service vendors. Even if a machine is used for academic
+purposes, if it is not institute-owned we cannot put it under the institute
+service and licensing umbrella. Please do not install personal WiFi anywhere on
+campus, it will interfere with the campus wireless.
 
 ## Where to go for help 
- Report problems to the computer services staff
-by sending email to helpdesk. The computer services have staff on call
-from 8am to 8pm on weekdays, and until 5pm on Saturdays. If your machine
-is on fire you can phone 6420 as well, but this is only for crises, and
-you should anyway also log the complaint to helpdesk. For institute-wide
-problems like network outages, the reception has contact numbers for the
-System Administrators. Please report major outages to the reception desk
+
+Report problems to the computer services staff by sending email to helpdesk. The
+computer services have staff on call from 8am to 8pm on weekdays, and until 5pm
+on Saturdays. If your machine is on fire you can phone 6420 as well, but this is
+only for crises, and you should anyway also log the complaint to helpdesk. For
+institute-wide problems like network outages, the reception has contact numbers
+for the System Administrators. Please report major outages to the reception desk
 at any time of day or night, any day of the week.
 
-Helpdesk helpdesk@ncbs.res.in
-
-System administrator Prasanta Kumar Baruah (prasanta@ncbs.res.in)
-
-Computer Committee Krushnamegh, Gaiti Hasan, Ramkumar, Shannon
+ ------------------------------ ----------------------
+ Helpdesk                       helpdesk@ncbs.res.in
+ System administrator           Prasanta Kumar Baruah (prasanta@ncbs.res.in)
+ Computer Committee             Krushnamegh, Gaiti Hasan, Ramkumar, Shannon
+ ------------------------------ ---------------------------------------------
 
 # Helpdesk System
 
@@ -1411,117 +1371,110 @@ the beginning of this handbook. Please route all your requests through
 this system except in the case of a true emergency.
 
 ## Helpdesk queries 
- If it is a true emergency (such as a security
-problem, computer on fire, or power to lab gone for longer than the
-generator switchover) do not hesitate to call. Helpdesk responses are
-fast, but not instantaneous. All other requests are doubtless important,
-but should be made on the helpdesk system.
 
-The helpdesk is also a queue. Everybody's request is urgent, so if you
-are number 5 on the list, please be patient.
+If it is a true emergency (such as a security problem, computer on fire, or
+power to lab gone for longer than the generator switchover) do not hesitate to
+call. Helpdesk responses are fast, but not instantaneous. All other requests are
+doubtless important, but should be made on the helpdesk system.
 
-The staff should always respond to your helpdesk request within a day.
-Even if the job is a big one that will take time, they should figure out
-what is to be done and get back to you with some details.
+The helpdesk is also a queue. Everybody's request is urgent, so if you are
+number 5 on the list, please be patient.
 
-The staff should categorize jobs for you. Category A jobs are the most
-common, and can be done within a day. Category B jobs require input from
-a local supplier or company representative, and should be done within a
-week. Category C jobs are occasional large jobs, such as major equipment
-breakdowns or orders that require off-site fabrication or imports. In
-this category, the helpdesk staff should keep you informed on a weekly
-basis as the job status evolves. The staff will try to make their best
-estimate for time, but remember that this estimate is based on dealers
-and other factors outside their control.
+The staff should always respond to your helpdesk request within a day.  Even if
+the job is a big one that will take time, they should figure out what is to be
+done and get back to you with some details.
+
+The staff should categorize jobs for you. Category A jobs are the most common,
+and can be done within a day. Category B jobs require input from a local
+supplier or company representative, and should be done within a week. Category C
+jobs are occasional large jobs, such as major equipment breakdowns or orders
+that require off-site fabrication or imports. In this category, the helpdesk
+staff should keep you informed on a weekly basis as the job status evolves. The
+staff will try to make their best estimate for time, but remember that this
+estimate is based on dealers and other factors outside their control.
 
 ## Helpdesk records 
- Every stage of the response will be documented in
-the helpdesk initial request, response, contacting vendors, vendor
-responses, tests and repairs, and final resolution. This is important
-for you to know what is going on, and for documenting the process. When
-the job is done, the helpdesk staff will contact you by email to ask if
-it may be resolved. You must reply to the same helpdesk email, to
-indicate whether or not the job may be marked as resolved. Please do so
-promptly. If another item has cropped up, don’t tag it on, but create a
-new helpdesk entry. An item may not be marked as resolved unless the
-requestor has been contacted and agrees that the item is resolved. We
-also encourage you to give feedback for each job resolved by the staff.
-This will help them improve their services. The records mean that staff
-is more accountable. All steps are on record. You can look at it at the
-intranet site helpdesk.ncbs.res.in. The records also mean that you are
-accountable. The dates of your request and its order are on record, as
-are any stages where you have changed your mind. If you have an issue
-about a policy matter, then do not take it up with the staff. Bring it
-to the Technical and Research Services committee. If you have an issue
-with how a response is proceeding, please check the job status. If you
-think that a step (say vendor referral) is unnecessary, by all means
-suggest an alternative. Be constructive.
+
+Every stage of the response will be documented in the helpdesk initial request,
+response, contacting vendors, vendor responses, tests and repairs, and final
+resolution. This is important for you to know what is going on, and for
+documenting the process. When the job is done, the helpdesk staff will contact
+you by email to ask if it may be resolved. You must reply to the same helpdesk
+email, to indicate whether or not the job may be marked as resolved. Please do
+so promptly. If another item has cropped up, don’t tag it on, but create a new
+helpdesk entry. An item may not be marked as resolved unless the requestor has
+been contacted and agrees that the item is resolved. We also encourage you to
+give feedback for each job resolved by the staff.  This will help them improve
+their services. The records mean that staff is more accountable. All steps are
+on record. You can look at it at the intranet site
+<https://helpdesk.ncbs.res.in>. The records also mean that you are accountable.
+The dates of your request and its order are on record, as are any stages where
+you have changed your mind. If you have an issue about a policy matter, then do
+not take it up with the staff.  Bring it to the Technical and Research Services
+committee. If you have an issue with how a response is proceeding, please check
+the job status. If you think that a step (say vendor referral) is unnecessary,
+by all means suggest an alternative. Be constructive.
 
 ## Interactions with the technical staff 
- Be professional and courteous
-in all your interactions. It is indeed upsetting when equipment fails,
-but it is absolutely incorrect to vent your annoyance on the staff (or
-on anyone else). They are, after all, trained professionals whose job is
-precisely to help you with these difficulties. We have a number of other
-policies in place for handling commonly occurring situations such as
-computer viruses, disk loss, equipment installation and so on. These
-policies have evolved based on our experiences and the necessity to keep
-warranty terms intact. Please do not be upset with the staff if they
-remind you that they are supposed to follow these policies. For example,
-they will frequently have to tell you that they are not authorized to
-install a computer or equipment themselves, although they are
-technically quite able to do so. This is because doing so will void
-warranty, which will be expensive for the lab in the long run. Please
-also note that the institute staff should not be called upon for working
-on personal equipment. In particular, laptops that you buy partly on
-your contingency grants are owned by you (you can take it when you
-leave), so it is inappropriate to ask the staff to fix them up for you.
+
+Be professional and courteous in all your interactions. It is indeed upsetting
+when equipment fails, but it is absolutely incorrect to vent your annoyance on
+the staff (or on anyone else). They are, after all, trained professionals whose
+job is precisely to help you with these difficulties. We have a number of other
+policies in place for handling commonly occurring situations such as computer
+viruses, disk loss, equipment installation and so on. These policies have
+evolved based on our experiences and the necessity to keep warranty terms
+intact. Please do not be upset with the staff if they remind you that they are
+supposed to follow these policies. For example, they will frequently have to
+tell you that they are not authorized to install a computer or equipment
+themselves, although they are technically quite able to do so. This is because
+doing so will void warranty, which will be expensive for the lab in the long
+run. Please also note that the institute staff should not be called upon for
+working on personal equipment. In particular, laptops that you buy partly on
+your contingency grants are owned by you (you can take it when you leave), so it
+is inappropriate to ask the staff to fix them up for you.
 
 ## Where to go for help 
-
 
 The Technical and Research Services Committee oversees these sections.
 Current members are Dr. Sandeep Krishna, Dr. Minhaj, Dr. Sanjay Sane;
 Dr. Akash Gulyani; Dr. Arati Ramesh; Mr. H. S. Venkataramana; Mr.
 Rengasamy; Mr. P.P. Ranjith (Secretary).
 
-
 # Library
 
-The library provides access to printed resources such as books and
-journals, as well as electronic journals and online databases, primarily
-for the use of faculty and staff on campus. The librarian is responsible
-for growing the library’s collection to reflect the interests of the
-campus academic community. The library staff and trainees help users
-make best use of these resources.
+The library provides access to printed resources such as books and journals, as
+well as electronic journals and online databases, primarily for the use of
+faculty and staff on campus. The librarian is responsible for growing the
+library’s collection to reflect the interests of the campus academic community.
+The library staff and trainees help users make best use of these resources.
 
 ## Borrowing facilities 
- Students may check out books or journals
-during working hours and should sign out the items at the library
-counter. A maximum of four books and two bound journals may be checked
-out at any time. Books are issued out for a maximum of two weeks and may
-be renewed if no reservations on the items are indicated. Bound journals
-may be issued out for a maximum of two days. The borrower bears
-responsibility for timely return. Fines will be charged on late return
-of books and journals. Unbound issues of journals are issued from the
-library for a maximum of two hours during normal working hours, with the
-permission of the librarian. Books and journals borrowed from the
-library may not be taken out of station. Occasionally, the librarian may
-request the return of an item that has been issued. The minimum period
-before a return can be requested is five days or a book and one day for
-a bound journals. Books and journals are placed “on reserve” which
-restricts their issue, if requested by course instructors.
+
+Students may check out books or journals during working hours and should sign
+out the items at the library counter. A maximum of four books and two bound
+journals may be checked out at any time. Books are issued out for a maximum of
+two weeks and may be renewed if no reservations on the items are indicated.
+Bound journals may be issued out for a maximum of two days. The borrower bears
+responsibility for timely return. Fines will be charged on late return of books
+and journals. Unbound issues of journals are issued from the library for a
+maximum of two hours during normal working hours, with the permission of the
+librarian. Books and journals borrowed from the library may not be taken out of
+station. Occasionally, the librarian may request the return of an item that has
+been issued. The minimum period before a return can be requested is five days or
+a book and one day for a bound journals. Books and journals are placed “on
+reserve” which restricts their issue, if requested by course instructors.
 
 ## Use across other libraries 
- The library obtains cards or tickets for
-the use of other libraries in Bangalore such as Indian Institute of
-Science Library, the British Library, etc. These are distributed by the
-librarian to users on written request, for limited use. If a user is
-found to abuse these privileges, they will be revoked. Users from other
-institution are allowed to use the library on production of a library
-access card, which will be issued on recommendation from the Dean.
-External users are not permitted to issue out library items, and are
-allowed to use the library only during office hours.
+
+The library obtains cards or tickets for the use of other libraries in Bangalore
+such as Indian Institute of Science Library, the British Library, etc. These are
+distributed by the librarian to users on written request, for limited use. If a
+user is found to abuse these privileges, they will be revoked. Users from other
+institution are allowed to use the library on production of a library access
+card, which will be issued on recommendation from the Dean.  External users are
+not permitted to issue out library items, and are allowed to use the library
+only during office hours.
 
 ## Loss and defacement of books, journals and other library articles 
 
@@ -1533,58 +1486,57 @@ library privileges revoked for a period of time. Library privileges may
 be revoked permanently for multiple or serious offences.
 
 ## Newly arrived journals, magazines, and newspapers 
- New items cannot
-be issued out of the library before a specified period. The period for
-'in library use only' will be indicated on each item. This will vary and
-is determined by the librarian from the general pattern of use and
+
+New items cannot be issued out of the library before a specified period. The
+period for 'in library use only' will be indicated on each item. This will vary
+and is determined by the librarian from the general pattern of use and
 requirements.
 
 ## Online access to journals and resources 
- The library subscribes to
-many online full-text journals and other digital resources. It regularly
-adds new online journals and resources to the collection. This service
-is available to all network users. Please note that due to licensing
-agreements use is restricted to campus IP addresses only. The list of
-journals is available on the library webpage. Downloading an entire
-journal issue in a systematic fashion is strictly prohibited and legally
-incorrect. This violates the license agreement we have entered with the
-publishers and jeopardizes the contract. All users must respect the
-license agreements and copyrights, and make use of these resources
-fairly. The responsibility for the appropriate use of licensed material
-lies with the user. The misuse of or unauthorized use of licensed
-information will result in cancellation of the services.
+
+The library subscribes to many online full-text journals and other digital
+resources. It regularly adds new online journals and resources to the
+collection. This service is available to all network users. Please note that due
+to licensing agreements use is restricted to campus IP addresses only. The list
+of journals is available on the library webpage. Downloading an entire journal
+issue in a systematic fashion is strictly prohibited and legally incorrect. This
+violates the license agreement we have entered with the publishers and
+jeopardizes the contract. All users must respect the license agreements and
+copyrights, and make use of these resources fairly. The responsibility for the
+appropriate use of licensed material lies with the user. The misuse of or
+unauthorized use of licensed information will result in cancellation of the
+services.
 
 ## Audio-Video Facility 
- The Library maintains and archives recordings
-of lectures, colloquia series, conference talks, etc. in DVD format for
-the use of its members. This collection is to be used only within the
-library, using the audio and video equipment provided.
+
+The Library maintains and archives recordings of lectures, colloquia series,
+conference talks, etc. in DVD format for the use of its members. This collection
+is to be used only within the library, using the audio and video equipment
+provided.
 
 ## Library access control system 
- This system is activated after
-working hours and holidays, including Saturdays and Sundays. Access
-control cards should be used for both entry and exit as use is recorded
-for purposes of security. Access control cards are strictly
+
+This system is activated after working hours and holidays, including Saturdays
+and Sundays. Access control cards should be used for both entry and exit as use
+is recorded for purposes of security. Access control cards are strictly
 non-transferable.
 
 ## Code of conduct 
- No loud conversations or group discussions;
-cellphones must be silent; no food or drinks; do not borrow on invalid
-memberships or someone else’s card; do not install personal software on
-library computers. The library is not responsible for loss of personal
-items. Do not reshelve books or periodicals; leave them on tables after
-use, and the library staff will return them to the appropriate location.
 
-.
+No loud conversations or group discussions; cellphones must be silent; no food
+or drinks; do not borrow on invalid memberships or someone else’s card; do not
+install personal software on library computers. The library is not responsible
+for loss of personal items. Do not reshelve books or periodicals; leave them on
+tables after use, and the library staff will return them to the appropriate
+location.
 
 ## Where to go for help 
 
-
-Library library@ncbs.res.in
-
-Librarian Avinash D. Chinchure, avinashdc@ncbs.res.in
-
-Assistant Librarian S. Umashashi, uma@ncbs.res.in
+ ----------------------------------- -----------------------
+ Library                             <library@ncbs.res.in>
+ Librarian Avinash D. Chinchure      <avinashdc@ncbs.res.in>
+ Assistant Librarian S. Umashashi    <uma@ncbs.res.in>
+ ----------------------------------- ------------------------
 
 # Technical and Research Facilities
 
@@ -1689,145 +1641,134 @@ hostel accommodation unless recommended by Head Academics. Students who
 continue on Bridging Appointments after thesis submission are not
 provided hostel accommodation.
 
-1\. PhD and Int-PhD Research Scholars registered at TIFR or MU.
-
-2\. MSc-by-Research students and MSc Wildlife students registered at
-TIFR.
-
-3\. Externally registered PhD students working full-time at NCBS or
-inStem.
-
-4\. Visiting graduate students working on collaborative projects at NCBS
-or inStem.
-
-5\. Graduate students on the first year of extension.
-
-6\. JRFs and Project Associates working at NCBS or inStem on grants.
+1. PhD and Int-PhD Research Scholars registered at TIFR or MU.
+2. MSc-by-Research students and MSc Wildlife students registered at TIFR.
+3. Externally registered PhD students working full-time at NCBS or inStem.
+4. Visiting graduate students working on collaborative projects at NCBS or
+   inStem.
+5. Graduate students on the first year of extension.
+6. JRFs and Project Associates working at NCBS or inStem on grants.
+(easymotion-prefix)
 
 ## Conditions of allotment 
- Allottees pay a refundable deposit of Rs.
-2,500 at the time of occupation, which is refunded when the room is
-vacated, less any outstanding dues. Allotment and continuation are
-subject to inspections of the rooms. Rooms are reassigned every year on
-August 1, linked to the renewal of studentship. An allotment may be
-terminated with a month’s notice. In the event that a student expects to
-be away from campus for 3 months or longer, the room should be
-surrendered; on occasion, a room which is vacant for 15 days might be
-temporarily granted to guests. The License Fee is Rs. 200 per month for
-a single room plus Rs. 100 per month water tariff; Rs. 100 per month for
-a shared room plus Rs. 50 per month water tariff; Rs. 25 per day for
-visiting students up to a period of six months, and thereafter Rs. 40
-per day.
+
+Allottees pay a refundable deposit of Rs.  2,500 at the time of occupation,
+which is refunded when the room is vacated, less any outstanding dues. Allotment
+and continuation are subject to inspections of the rooms. Rooms are reassigned
+every year on August 1, linked to the renewal of studentship. An allotment may
+be terminated with a month’s notice. In the event that a student expects to be
+away from campus for 3 months or longer, the room should be surrendered; on
+occasion, a room which is vacant for 15 days might be temporarily granted to
+guests. The License Fee is Rs. 200 per month for a single room plus Rs. 100 per
+month water tariff; Rs. 100 per month for a shared room plus Rs. 50 per month
+water tariff; Rs. 25 per day for visiting students up to a period of six months,
+and thereafter Rs. 40 per day.
 
 ## Use of rooms 
- You can take possession of the room by producing your
-offer letter or any other official order. You should check the furniture
-and fixtures at the time of occupation. You can report any problems to
-the appropriate helpdesk queue. You are responsible for maintenance of
-the room until you leave, and will be charged for any damage. Pets are
-not allowed in the hostel or on campus. Be sensitive to other occupants
-of the hostel. Loud activities are not permitted after 10pm. Keep the
-common areas clean, use the garbage cans provided in each wing. The
-hostel has common cooking facilities, do not cook in your room. You many
-not grant access to your room to any other person when you are absent.
-You may accommodate a guest with prior permission, for a maximum of 15
-days. The guest will be charged Rs. 25 per day. Families and children
-cannot stay in the hostel. You can surrender your room with one week’s
-notice. You must return all hostel items and pay any dues necessary
-before reclaiming your deposit.
+
+You can take possession of the room by producing your offer letter or any other
+official order. You should check the furniture and fixtures at the time of
+occupation. You can report any problems to the appropriate helpdesk queue. You
+are responsible for maintenance of the room until you leave, and will be charged
+for any damage. Pets are not allowed in the hostel or on campus. Be sensitive to
+other occupants of the hostel. Loud activities are not permitted after 10pm.
+Keep the common areas clean, use the garbage cans provided in each wing. The
+hostel has common cooking facilities, do not cook in your room. You many not
+grant access to your room to any other person when you are absent.  You may
+accommodate a guest with prior permission, for a maximum of 15 days. The
+guest will be charged Rs. 25 per day. Families and children cannot stay in
+the hostel. You can surrender your room with one week’s notice. You must
+return all hostel items and pay any dues necessary before reclaiming your
+deposit.
 
 ## Where to go for help 
-
-
 Mr. Shaju Varghese shaju@ncbs.res.in
 
 
 # Medical and Counselling Services
 
 ## Medical Emergencies 
- In case of an emergency during office hours
-(9am – 530pm, Monday – Friday; 11am – 3pm, Saturday) call the medical
-centre (x6446, x6449, x6450). If an emergency occurs after office hours,
-call the front desk (x6001/2 or 23666001/2 off campus). The housing
-campus (Mandara) has a medical centre in Kepala Block (10am – 2pm,
-Monday- Friday; tel 67627295). Inform them of your problem and where
-you are located. The reception will put you in touch with the doctor on
-duty and dispatch the on-site ambulance when required. In case of an
-emergency arising while you are outside the campus, please visit
-Bangalore Baptist Hospital or Columbia Asia directly. You must present
-your ID card at the time of treatment and inform the Establishment as
-soon as possible so they can coordinate with the hospital.
+
+In case of an emergency during office hours (9am – 530pm, Monday – Friday; 11am
+– 3pm, Saturday) call the medical centre (x6446, x6449, x6450). If an emergency
+occurs after office hours, call the front desk (Ext: 6001/2 or 23666001/2 off
+campus). The housing campus (Mandara) has a medical centre in Kepala Block (10am
+– 2pm, Monday- Friday; tel 67627295). Inform them of your problem and where you
+are located. The reception will put you in touch with the doctor on duty and
+dispatch the on-site ambulance when required. In case of an emergency arising
+while you are outside the campus, please visit Bangalore Baptist Hospital or
+Columbia Asia directly. You must present your ID card at the time of
+treatment and inform the Establishment as soon as possible so they can
+coordinate with the hospital.
 
 ## Medical Aid 
- First-aid kits are available at the security office, at
-the main reception, and on all floors of the Southern Laboratory
-Complex. We operate a primary healthcare facility for routine health
-issues and minor injuries. Students can consult the Campus Medical
-Officers and be treated at the Campus Medical Centre free of cost. This
-does not include the cost of medicines. Students can use the outpatient
-facility at Bangalore Baptist Hospital or at Columbia Asia Hospital with
-a reference letter from the Campus Medical Officer.
+
+First-aid kits are available at the security office, at the main reception, and
+on all floors of the Southern Laboratory Complex. We operate a primary
+healthcare facility for routine health issues and minor injuries. Students can
+consult the Campus Medical Officers and be treated at the Campus Medical Centre
+free of cost. This does not include the cost of medicines. Students can use the
+outpatient facility at Bangalore Baptist Hospital or at Columbia Asia Hospital
+with a reference letter from the Campus Medical Officer.
 
 ## Counselling services 
- Counselling services on our campus are
-provided by an external service provider, Parivarthan
-(www.parivarthan.org). Any member of our campus can access this service
-confidentially. Please identify yourself as a member of campus by
-showing them your ID card. This is exclusively for the purpose of
-keeping track of the work from our campus and arranging to pay them. The
-names of those using the service will not be made available to the
-campus institutions. To use this service, please contact Parivarthan
-directly using one of the following methods. On site
-consultations** **A staff member from Parivarthan offers campus
-consultations twice a week (Tue 1030am – 130pm, Thu 200pm – 500pm);
-please make an appointment by contacting the counsellor B. N Veena
-(bnveena@yahoo.com). Telephone consultations** **Parivarthan offers a
-telephone counselling helpline for those who are unable to come in for
-face-to-face sessions; helpline counsellors are trained to deal with a
-variety of issues ranging from stress and normal life issues to trauma
-and mental illness (call 6533 3323, email ychelpline@gmail.com).
-Consultations at the Parivarthan offices (Mon – Fri, 4pm – 10pm), 1st
-Floor, \#3310, 8th Cross, 13th Main, HAL 2nd Stage, Bangalore 560 008;
-call 2527 3462 or 25298686; email parivarthanblr@gmail.com. A guide on
+
+Counselling services on our campus are provided by an external service provider,
+Parivarthan (www.parivarthan.org). Any member of our campus can access this
+service confidentially. Please identify yourself as a member of campus by
+showing them your ID card. This is exclusively for the purpose of keeping track
+of the work from our campus and arranging to pay them. The names of those using
+the service will not be made available to the campus institutions. To use this
+service, please contact Parivarthan directly using one of the following methods.
+
+**On site consultations** 
+A staff member from Parivarthan offers campus consultations twice a week (Tue
+1030am – 130pm, Thu 200pm – 500pm); please make an appointment by contacting the
+counsellor B. N Veena (<bnveena@yahoo.com>).  
+
+**Telephone consultations** 
+Parivarthan offers a telephone counselling helpline for those
+who are unable to come in for face-to-face sessions; helpline counsellors are
+trained to deal with a variety of issues ranging from stress and normal life
+issues to trauma and mental illness (call 6533 3323, email
+ychelpline@gmail.com).  Consultations at the Parivarthan offices (Mon – Fri, 4pm
+– 10pm), 1st Floor, \#3310, 8th Cross, 13th Main, HAL 2nd Stage, Bangalore 560
+008; call 2527 3462 or 25298686; email <parivarthanblr@gmail.com>. A guide on
 what to expect from a counselling service is provided at
-intranet.ncbs.res.in/files/NCBS-Parivarthan.
+<https://intranet.ncbs.res.in/files/NCBS-Parivarthan>.
 
 ## Where to go for help 
-
 
 The contact details of individual doctors and other medical staff are
 available on the intranet. For operational details relating to the
 medical centres (not your own medical issues) please email the
-coordinator at medical@ncbs.res.in. For any assistance or clarification
+coordinator at <medical@ncbs.res.in>. For any assistance or clarification
 relating to medical insurance, interaction with hospitals etc. please
-contact the Establishment Section x6335, adminhelp@ncbs.res.in.
+contact the Establishment Section x6335, <adminhelp@ncbs.res.in>.
 
 
 # Sports Complex
 
-The sports complex provides free and easy access to sporting and gym
-facilities to all members of the campus community. It includes a
-swimming pool, gym, badminton and squash courts, and a table tennis
-table. There are also football, cricket, tennis, volleyball and
-basketball courts in the outdoor area. Additional recreational
-facilities include a foosball table, a carrom board, and a large-screen
-TV which is very popular during World Cups. The sports complex reception
-staff are here to assist you. They can issue out towels, swimming gear
+The sports complex provides free and easy access to sporting and gym facilities
+to all members of the campus community. It includes a swimming pool, gym,
+badminton and squash courts, and a table tennis table. There are also football,
+cricket, tennis, volleyball and basketball courts in the outdoor area.
+Additional recreational facilities include a foosball table, a carrom board, and
+a large-screen TV which is very popular during World Cups. The sports complex
+reception staff are here to assist you. They can issue out towels, swimming gear
 like kick pads and pool buoys. A first-aid kit and an ambulance are kept
-available in case of emergencies. As with any good sporting facility,
-ours requires care and maintenance to function properly. Please ensure
-that you adhere to the posted guidelines and the instructions of the
-staff. Rules for each individual sporting section are outlined in the
-Sports Complex booklet. Please inform us by email if you find anyone
-violating the guidelines. The names of current Sports Committee members
-will be displayed on the notice board outside the facility.
+available in case of emergencies. As with any good sporting facility, ours
+requires care and maintenance to function properly. Please ensure that you
+adhere to the posted guidelines and the instructions of the staff. Rules for
+each individual sporting section are outlined in the Sports Complex booklet.
+Please inform us by email if you find anyone violating the guidelines. The names
+of current Sports Committee members will be displayed on the notice board
+outside the facility.
 
 ## Where to go for help 
 
-
-Sports Complex sports@ncbs.res.in
-
-Sports Complex front desk x6099
+- Sports Complex <sports@ncbs.res.in>
+- Sports Complex front desk Ext: 6099
 
 # Campus Services
 
@@ -1837,20 +1778,26 @@ entry to campus and access to facilities. If you lose your access card
 it will be reissued for a fee.
 
 ## Canteen 
- The main canteen is open for breakfast (715am – 920am),
-tea (10am – noon), lunch (1245pm – 145pm), snacks (3pm – 6pm), and
-dinner (715pm – 830pm). There is no canteen service after lunch on
-Sundays. Lunch is also served in the outdoor canteen at the main
-entrance. Terrace cafeterias on the first floor of the Eastern Labs and
-second floor of the Administrative Block 10am – 6pm, serving beverages,
-snacks and packed lunches. A fast food counter operates on the first
-floor of the main canteen.
+
+The main canteen is open for,
+
+- Breakfast (715am to 920am)
+- Tea (10am to noon)
+- Lunch (1245pm to 145pm)
+- Snacks (3pm to 6pm)
+- Dinner (715pm to 830pm)
+
+There is no canteen service after lunch on Sundays. Lunch is also served in the
+outdoor canteen at the main entrance. Terrace cafeterias on the first floor of
+the Eastern Labs and second floor of the Administrative Block 10am – 6pm,
+serving beverages, snacks and packed lunches. A fast food counter operates on
+the first floor of the main canteen.
 
 ## Transport 
- Shuttle services operating between GKVK, IISc, and the
-Mandara Campus are available free of cost to students and members of the
-community. Schedules are posted on the NCBS website and available at the
-reception.
+
+Shuttle services operating between GKVK, IISc, and the Mandara Campus are
+available free of cost to students and members of the community. Schedules are
+posted on the NCBS website and available at the reception.
 
 ## Bank 
  The Central Bank of India operates an extension counter at

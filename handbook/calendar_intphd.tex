@@ -1,6 +1,7 @@
 %\RequirePackage{luatex85}
 \documentclass[crop,tikz]{standalone}
-\usepackage{pgfplots}
+\usetikzlibrary{calc,positioning,fit,arrows,arrows.meta}
+\usepackage[sfdefault,light]{FiraSans}
 \begin{document}
 
 \begin{tikzpicture}[scale=1
@@ -16,7 +17,8 @@
         \node[] (year\y month\m) at (\m,-\gap * \y cm) {{\month}};
     }
 
-    \node[below=of year7]{{\bf Extension}};
+    \node[below=of year7]{{\tiny Extension}};
+    \node[left=of year1,rotate=90] {IntPhD Calendar};
 
     % Orientation.
     \def\cl{red}
