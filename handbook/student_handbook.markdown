@@ -1,4 +1,5 @@
 ---
+title : Student Handbook - 2017
 author : NCBS Bangalore
 date : \today 
 header-includes :
@@ -11,12 +12,12 @@ header-includes :
 
 \newcommand\MAILTO[2]{#1 \Letter\; \href{mailto:#2}{\nolinkurl{#2}}}
 
-\thispagestyle{empty}
-
-![](./title.pdf){width=100%} \
-
-\newpage
-
+The purpose of this handbook is to outline the procedures for students to
+receive a degree. This handbook will be updated annually in August.  Any major
+changes made prior to that time will be posted to our website with notification
+to all graduate students by email.  The information in this handbook should be
+viewed as guidelines and are subject to change depending on the policies of the
+Institutes.  
 
 # HONOUR CODE
 Our community operates on a principle of trust. Most research materials
@@ -24,6 +25,7 @@ are kept in accessible locations. Research on our campus depends
 critically on colleagues being able to trust each other’s data. Any form
 of cheating, plagiarism, or falsification of data is unacceptable and
 will invite appropriate consequences.
+
 
 \newpage
 # Academic Calendar {#academic_calendar}
