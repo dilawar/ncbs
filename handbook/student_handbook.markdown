@@ -33,11 +33,47 @@ will invite appropriate consequences.
 It is the student’s responsibility to ensure they meet all requirements
 and deadlines.
 
+<!--
 **PhD Calendar** \newline ![PhD Calendar](./calendar_phd.pdf){width=90%} 
 
 **IntPhd Calendar** \newline ![IntPhD Calendar](./calendar_intphd.pdf){width=90%}
 
 **MSc Calendar** \newline ![MSc Calendar](./calendar_msc.pdf){width=90%}
+-->
+
+## PhD Calendar 
+   
+  **Timeline**        | **Event**                | Notes 
+ ---------------------|--------------------------|-------------------------------
+  Y1 Aug              | Orientation              | Visit to labs and facilities
+  Y1 Sep - Dec        | Rotations                | 2 rotations.
+  **Y1 Dec**          | Lab assignments          |
+  Y1 Mar - Jun        | TCM and renewel          | Thesis committee meeting
+  Y1 Jun              | CE-I   (First attempt) | 
+  Y2 Dec              | CE-I   (Retry)         | IntPhd first attempt
+  **Y2 Jan - Jun**    | **CE-II and registration** |
+  Y3,Y4 Mar - Jun     | TCM and renewel          |
+  **Y5 Aug - Dec**    | Thesis approval or extension request |
+  Y5 Jan - Jul        | Synposis and thesis submission | 
+  *Y6 Aug - Dec*      | Thesis approval or extension request | Students on extension
+  *Y6 Jan - Jul*      | Synposis and thesis submission | Students on extension 
+
+## IntPhD Calendar 
+   
+  **Timeline**        | **Event**                | Notes 
+ ---------------------|--------------------------|-------------------------------
+  Y1 Aug              | Orientation              | Visit to labs and facilities
+  Y1 Sep - Feb        | Rotations                | 3 rotations.
+  **Y1 Feb**          | Lab assignments          |
+  Y2 Dec              | CE-I (First attempt)     | Phd (Retry)
+  Y2 Jun              | CE-I (Retry)             |
+  **Y3 Dec**          | **CE-II and registration** |
+  Y3,Y4,Y5 Mar - Jun  | TCM and renewel          |
+  **Y6 Aug - Dec**    | **Thesis approval or extension request** |
+  Y6 Jan - Jul        | Synposis and thesis submission | 
+  *Y7 Aug - Dec*      | Thesis approval or extension request | Students on extension
+  *Y7 Jan - Jul*      | Synposis and thesis submission | Students on extension 
+
 
 
 
