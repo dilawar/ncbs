@@ -3,7 +3,12 @@ title: Stuent Handbook
 author: NCBS Bangalore
 date : \today 
 header-includes:
-    - \usepackage[margin=15mm]{geometry}
+    - \usepackage[top=2cm, bottom=3cm, left=3cm, right=4cm, heightrounded,
+          marginparwidth=4cm, marginparsep=5mm]{geometry}
+    - \usepackage[sfdefault,light]{FiraSans}
+    - \usepackage{standalone}
+    - \usepackage{tikz}
+    - \usetikzlibrary{positioning,calc,arrows,arrows.meta,fit}
 ---
 
 **HONOUR CODE**
@@ -14,18 +19,26 @@ critically on colleagues being able to trust each other’s data. Any form
 of cheating, plagiarism, or falsification of data is unacceptable and
 will invite appropriate consequences.
 
-**Academic Calendar**
+\newpage
+# Academic Calendar
 
 *It is the student’s responsibility to ensure they meet all requirements
 and deadlines.*
 
-TCM: Thesis Committee Meeting
+## PhD Calendar
+\includestandalone{calendar_phd}
 
+## IntPhD Calendar
+\includestandalone{calendar_intphd}
+
+## MSc Calendar
+\includestandalone{calendar_msc}
+
+TCM: Thesis Committee Meeting
 CE: Comprehensive Examination
 
-![](media/image1.png)
-
-**Where to go for help**
+\newpage
+# Where to go for help
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------
   **Service**            **Supervisor**                     **@ncbs.res.in**   **Notes**
@@ -61,7 +74,8 @@ CE: Comprehensive Examination
   Transport                                                 transport          Local transport
   ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Academic Office:** All student academic matters, including scheduling
+## Academic Office 
+All student academic matters, including scheduling
 Annual Work Seminars, submission of Thesis Advisory Committee reports,
 course transcripts, interactions with MU or TIFR, and thesis submission.
 
@@ -69,8 +83,9 @@ Contact: acadoffice@ncbs.res.in
 
 Ms. K. S. Vishalakshi (ksvishal@ncbs.res.in)
 
-**Establishment and Administrative Office:** Joining formalities,
-extramural fellowships, interface with outside agencies.
+## Establishment and Administrative Office
+
+Joining formalities, extramural fellowships, interface with outside agencies.
 
 Contact: adminhelp@ncbs.res.in
 
@@ -78,54 +93,9 @@ Mr. Ashok Rao (<ashok@ncbs.res.in>)
 
 headadmin@instem.res.in
 
-**\
-**
 
-**Contents**
+\tableofcontents
 
-> Programmes of Study 6
->
-> Student Categories 7
->
-> PhD and Integrated-PhD 8
->
-> MSc-by-Research 10
->
-> MSc in Wildlife Biology and Conservation 11
->
-> Graduate Coursework 13
->
-> Comprehensive Examination 15
->
-> Registration and Renewals 16
->
-> Thesis Submission 18
->
-> Academic Integrity 19
->
-> Community Ethics 20
->
-> Laboratory Safety and Etiquette 21
->
-> Statutory Research Committees 23
->
-> Computer and Network Use 24
->
-> Helpdesk System 26
->
-> Library 28
->
-> Technical and Research Facilities 29
->
-> Student Entitlements 30
->
-> Hostel Guidelines 31
->
-> Medical and Counselling Services 32
->
-> Sports Complex 33
->
-> Campus Services 33
 
 The purpose of this handbook is to outline the procedures for students
 to receive a degree. This handbook will be updated annually in August.
@@ -134,7 +104,7 @@ with notification to all graduate students by email. The information in
 this handbook should be viewed as guidelines and are subject to change
 depending on the policies of the Institutes.
 
-**Programmes of study**
+# Programmes of study
 
 Our programmes target students who intend to pursue research careers in
 interdisciplinary areas within or outside academia. Our main goal is to
@@ -186,7 +156,7 @@ theses and authorizes a viva voce examination when all concerns are
 addressed. Once the student passes the examination, the Board recommends
 award of the relevant degree.
 
-**Student Categories **
+# Student Categories
 
 **PhD and Int-PhD Research Scholars:** Candidates for the PhD and
 Int-PhD programmes are invited to apply in response to advertisements
@@ -244,8 +214,7 @@ MU. Fees for externally-registered PhD students on grants and students
 in the MSc-by-Research programme are covered by extramural funds
 available to the student or the PI.
 
-**\
-PhD and Integrated PhD**
+# PhD and Integrated PhD
 
 **Degree Awarding Institutions:** Students enrolled in the PhD and
 Int-PhD programmes at NCBS are awarded degrees by TIFR, Mumbai. Students
@@ -367,8 +336,7 @@ Research Performance 20 22
 
 Thesis 30 30
 
-**\
-MSc-by-Research**
+# MSc-by-Research
 
 **Selection:** Students offered a position in the MSc-by-Research
 programme via the Int-PhD interviews can be appointed on grants funded
@@ -425,7 +393,7 @@ Research Performance 24
 
 Thesis 24
 
-**MSc in Wildlife Biology and Conservation**
+## MSc in Wildlife Biology and Conservation
 
 **Background:** This programme is offered by NCBS, the Centre for
 Wildlife Studies (CWS), and the Wildlife Conservation Society (WCS). It
@@ -537,10 +505,7 @@ Coursework 50 (minimum)
 
 Thesis 10
 
-***\
-***
-
-**Graduate Coursework**
+# Graduate Coursework
 
 Courses are an important component in the training of graduate students
 on campus. The Graduate Coursework Programme aims to create an exciting
@@ -638,10 +603,7 @@ PhD at TIFR Int-PhD at TIFR MSc at TIFR PhD at MU
 
 16 22 12 12
 
-**\
-**
-
-**Comprehensive Examination**
+# Comprehensive Examination
 
 Students must pass the CE Parts I and II to register at TIFR or MU. The
 CE is designed to test the breadth of a student’s background, as well as
@@ -692,10 +654,8 @@ PhD: CE Part I should be cleared by Y2 December, and Part II by Y2 June.
 Int-PhD: CE Part I should be cleared by Y2 June, and Part II by Y3
 December.
 
-**\
-**
 
-**Registration and Renewals**
+# Registration and Renewals
 
 The detailed checklist of forms and documents required for registration
 at TIFR and MU is available at the Academic Office. Please ensure you
@@ -823,10 +783,7 @@ copy of the student’s curriculum vitae. The bridging appointment is
 tenable for a maximum period of 12 months. Accommodation is not provided
 on a Bridging Appointment.
 
-**\
-**
-
-**Thesis Submission**
+# Thesis Submission
 
 The detailed checklist of forms and documents required for synopsis and
 thesis submission at TIFR and MU is available at the Academic Office.
@@ -883,10 +840,9 @@ the status of reports and scheduling of the thesis defense may be
 directed to Head Academics. Please do not contact the University Cell of
 TIFR Mumbai or Manipal University directly. A checklist available at the
 Academic Office lists the sets of thesis copies and completed forms
-which must be submitted post the viva voce examination.**\
-**
+which must be submitted post the viva voce examination.
 
-**Academic Integrity**
+# Academic Integrity
 
 Studying and working on our campus requires the highest standards of
 honesty and academic integrity in research, as well as the highest moral
@@ -983,7 +939,7 @@ abide by your PI and your committee’s judgment where they feel that
 certain publication may be delayed for a reasonable period for
 protection of any intellectual property arising from the research.
 
-**Community Ethics**
+# Community Ethics
 
 We are committed to maintaining an environment for research, learning
 and teaching that is free from even the appearance of unlawful
@@ -1044,7 +1000,7 @@ www.ncbs.res.in/sitefiles/CampusHarassmentPolicyDec2013.pdf
 
 Women’s Cell and ICC: https://www.ncbs.res.in/women%27s\_cell
 
-**Laboratory Safety and Etiquette**
+# Laboratory Safety and Etiquette
 
 It is your responsibility to ensure that there is no sabotage, willful
 damage, fraud or theft of common equipment or supplies. Unauthorized use
@@ -1205,10 +1161,9 @@ involves stem cells. The Committee is registered with the National Apex
 Committee for Stem Cell Research and Therapy (NAC-SCRT). The
 institutional committee meets twice in the year to provide overview,
 review projects and proposals, approve the scientific merit of all
-issues related to stem cell research**.*\
-***
+issues related to stem cell research.
 
-**Computer and network use**
+# Computer and network use
 
 Network access, email, and support are shared facilities, meaning that
 all students, faculty and staff can use them. Hardware and software are
@@ -1365,7 +1320,7 @@ System administrator: Prasanta Kumar Baruah (prasanta@ncbs.res.in)
 
 Computer Committee: Krushnamegh, Gaiti Hasan, Ramkumar, Shannon
 
-**Helpdesk System**
+# Helpdesk System
 
 For many campus services, you can ask for support through a computerized
 helpdesk system which keeps track of your requests and ensures they are
@@ -1444,10 +1399,8 @@ Current members are: Dr. Sandeep Krishna, Dr. Minhaj, Dr. Sanjay Sane;
 Dr. Akash Gulyani; Dr. Arati Ramesh; Mr. H. S. Venkataramana; Mr.
 Rengasamy; Mr. P.P. Ranjith (Secretary).
 
-**\
-**
 
-**Library**
+# Library
 
 The library provides access to printed resources such as books and
 journals, as well as electronic journals and online databases, primarily
@@ -1538,7 +1491,7 @@ Librarian: Avinash D. Chinchure, avinashdc@ncbs.res.in
 
 Assistant Librarian: S. Umashashi, uma@ncbs.res.in
 
-**Technical and Research Facilities**
+# Technical and Research Facilities
 
 Research at NCBS and inStem is supported by an array of state-of-the-art
 analytic instruments and facilities. Many of the campus research
@@ -1559,10 +1512,8 @@ facility has its own operating procedures and health and safety
 regulations. Please visit the facility websites or contact facility
 managers if you wish to use any of these resources.
 
-***\
-***
 
-**Student Entitlements**
+# Student Entitlements
 
 **Salary disbursement**: The fellowship is paid on the last working day
 of the month and directly credited to the student’s bank account.
@@ -1623,7 +1574,7 @@ or residential proof certificate while applying for a passport, visa,
 bank account, etc., please contact NCBS: Mr. Ashok Rao
 (ashok@ncbs.res.in) or INSTEM : headadm@instem.res.in.
 
-**Hostel Guidelines**
+# Hostel Guidelines
 
 Students in the graduate programme are provided accommodation in the
 hostels. While you may make their own arrangements for accommodation, we
@@ -1689,10 +1640,8 @@ before reclaiming your deposit.
 
 Mr. Shaju Varghese: shaju@ncbs.res.in
 
-**\
-**
 
-**Medical and Counselling Services**
+# Medical and Counselling Services
 
 **Medical Emergencies:** In case of an emergency during office hours
 (9am – 5:30pm, Monday – Friday; 11am – 3pm, Saturday) call the medical
@@ -1748,10 +1697,8 @@ coordinator at medical@ncbs.res.in. For any assistance or clarification
 relating to medical insurance, interaction with hospitals etc. please
 contact the Establishment Section: x6335, adminhelp@ncbs.res.in.
 
-**\
-**
 
-**Sports Complex**
+# Sports Complex
 
 The sports complex provides free and easy access to sporting and gym
 facilities to all members of the campus community. It includes a
@@ -1776,7 +1723,7 @@ Sports Complex: sports@ncbs.res.in
 
 Sports Complex front desk: x6099
 
-**Campus Services**
+# Campus Services
 
 **Access Card:** All students are issued an Access Card which allows
 entry to campus and access to facilities. If you lose your access card
