@@ -17,27 +17,14 @@ import numpy as np
 import cv2
 import itertools
 
-def find_paths(edges):
-    paths = [ ]
-    while True:
-        pmin, pmax, minL, start = cv2.minMaxLoc(edges)
-        if pmax == 0:
-            break
-        path = [start]
-        while True:
-            x, y = path[-1]
-            edges[y,x]=0
-            connected = False
-            for i, j in itertools.product([-1,1], repeat=2):
-                v = edges[y+j,x+i]
-                if v == pmax:
-                    path.append((x+i,y+j))
-                    edges[y+j,x+i] = 0
-                    connected = True
-            if not connected:
-                break
-        paths.append(path)
-    return paths
+def path_sort( path ):
+    newpath = [ path[0] ]
+    path.pop(0)
+    while path:
+        near, nearI = min([ (dist(newpath[-1], x), i) for i, x in enumerate(path)])
+        newpath.append(path[nearI])
+        path.pop(nearI)
+    return newpath
 
 def main( ):
     img = cv2.imread( './logo.png', 0 )
@@ -48,9 +35,9 @@ def main( ):
     for l in range(1,int(temp.max())+1):
         p1 = np.where( temp == l )
         with open('path%d.txt' % l, 'w' ) as f:
-            for x, y in zip(*p1):
+            for x, y in path_sort(list(zip(*p1))):
                 new[x,y]=10*l
-                f.write('%d %d\n' % (x,y))
+                f.write('%f %f\n' % (y/10.0,-x/10.0))
         print('Wrote labeled path to path%d.txt' % l)
     cv2.imwrite( 'logo.jpg', np.vstack((img1,new)))
 

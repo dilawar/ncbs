@@ -12,11 +12,12 @@
 
 \begin{tikzpicture}
 
-    \draw[black] (0mm,0mm) rectangle ++(45mm,50mm);
+    % \draw[black] (0mm,0mm) rectangle ++(45mm,50mm);
 
-    \draw[ncbsgreen,thick] plot[fill=ncbsgreen] coordinates {
-        (5mm,0)  (10mm,3mm) (15mm,5mm) (20mm,7mm)
-        };
+    \foreach \i in {1,2}
+    {
+        \draw[ncbsgreen,thick,smooth,fill=ncbsgreen] plot file{path\i.txt};
+    }
 
 
 \end{tikzpicture}
