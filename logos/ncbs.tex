@@ -12,12 +12,8 @@
 
 \begin{tikzpicture}
 
-    % \draw[black] (0mm,0mm) rectangle ++(45mm,50mm);
-
-    \foreach \i in {1,2}
-    {
-        \draw[ncbsgreen,thick,smooth,fill=ncbsgreen] plot file{path\i.txt};
-    }
+    \foreach \i in {0,1,...,15}
+        \draw[ncbsgreen,very thick,smooth] plot file{path\i.txt};
 
 
 \end{tikzpicture}
