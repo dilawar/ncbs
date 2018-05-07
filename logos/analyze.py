@@ -23,11 +23,15 @@ def dist(p1, p2):
     d = ((x1-x2)**2 + (y1-y2)**2)**0.5
     return d
 
+def min_nonzero(vec):
+    return min([(d,x) for (d,x) in vec if d >= 1])
+
+
 def path_sort( path ):
     newpath = [ path[0] ]
     path.pop(0)
     while path:
-        near, nearI = min([ (dist(newpath[-1], x), i) for i, x in enumerate(path)])
+        near, nearI = min_nonzero([ (dist(newpath[-1], x), i) for i, x in enumerate(path)])
         newpath.append(path[nearI])
         path.pop(nearI)
     return newpath
@@ -43,7 +47,7 @@ def main( ):
         with open('path%d.txt' % l, 'w' ) as f:
             for x, y in path_sort(list(zip(*p1))):
                 new[x,y]=10*l
-                f.write('%f %f\n' % (y/10.0,-x/10.0))
+                f.write('%g %g\n' % (y,-x))
         print('Wrote labeled path to path%d.txt' % l)
     cv2.imwrite( 'logo.jpg', np.vstack((img1,new)))
 

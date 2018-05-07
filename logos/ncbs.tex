@@ -2,6 +2,8 @@
 % I have tried to keep colors as true as possible.
 
 \documentclass[tikz,preview,trim=true]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
 \usepackage{xcolor}
 
 \definecolor{ncbsgreen}{rgb}{0.07,0.29,0.09}
@@ -12,8 +14,43 @@
 
 \begin{tikzpicture}
 
-    \foreach \i in {0,1,...,15}
-        \draw[ncbsgreen,very thick,smooth] plot file{path\i.txt};
+    \begin{axis}[axis lines=none, smooth, color=white
+        , every plot/.style={draw=white}
+        , axis equal
+        ]
+
+        % n
+        \addplot[fill=ncbstext,smooth,ncbstext] plot file{path10.txt} -- cycle;
+
+        % c
+        \addplot[fill=ncbstext,smooth,ncbstext] plot file{path8.txt} -- cycle;
+
+        % b
+        \addplot[name path=bout,ncbstext] table{path2.txt} -- cycle;
+        \addplot[name path=bin, ncbstext] table{path11.txt} -- cycle;
+        \addplot[fill=ncbstext,draw=ncbstext] fill between [of=bout and bin];
+
+        % s
+        \addplot[fill=ncbstext,smooth,ncbstext] plot file{path9.txt} -- cycle;
+
+        % leaf
+        \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path3.txt} -- cycle;
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path4.txt} -- cycle;
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path5.txt} -- cycle;
+        \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path6.txt} -- cycle;
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path7.txt} -- cycle;
+        \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path12.txt} -- cycle;
+        \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path13.txt} -- cycle;
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path14.txt} -- cycle;
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path15.txt} -- cycle;
+
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path1.txt};
+
+
+    \end{axis}
+
+
+    % rectangle.
 
 
 \end{tikzpicture}
