@@ -29,26 +29,25 @@ def min_nonzero(vec):
     except Exception as e:
         return min(vec)
 
-def smooth_but_preserve_corners(path):
+def preprocess(path):
     path = path_sort( path )
     newpath = [ path[0] ]
     for p in path[1:]:
-        if p[0] == newpath[-1][0] or p[1] == newpath[-1][1]:
-            continue
         newpath.append( p )
     return newpath
 
 def path_sort( path ):
-    newpath = max(path[0])
+    newpath = [ path[0] ]
     path.pop(0)
     while path:
         near, nearI = min_nonzero([ (dist(newpath[-1], x), i) for i, x in enumerate(path)])
         newpath.append(path[nearI])
         path.pop(nearI)
+    print( newpath )
     return newpath
 
 def find_corners( img ):
-    corners = cv2.goodFeaturesToTrack(img, 1000, 0.2, 1 )
+    corners = cv2.goodFeaturesToTrack(img, 1000, 0.5, 1 )
     new = np.zeros_like(img)
     for c in corners:
         for y, x in c:
@@ -62,9 +61,8 @@ def main( ):
     # are performed.
     corners, new = find_corners( img )
 
-    #  img = cv2.bilateralFilter(img, 9, 75, 75)
+    img = cv2.bilateralFilter(img, 9, 75, 75)
     thres = cv2.Canny( img, 100, 200 )
-    cv2.imwrite( 'logo_edges.png', np.vstack((img,thres)) )
 
     # Add corners to thres image
     for cs in corners:
@@ -72,15 +70,15 @@ def main( ):
             thres[int(y),int(x)] = thres.max()
 
     # Compute connected components.
-    n, temp = cv2.connectedComponents(thres, 4)
+    n, temp = cv2.connectedComponents(thres, 8)
     new = np.zeros_like(temp)
 
     for l in range(1,int(temp.max())+1):
         p1 = np.where( temp == l )
         with open('path%d.txt' % l, 'w' ) as f:
-            path = smooth_but_preserve_corners(list(zip(*p1)))
-            x, y = path[0]
-            cv2.putText( new, '%s' % l, (y,x), cv2.FONT_HERSHEY_SIMPLEX, 0.4, 255 )
+            path = preprocess(list(zip(*p1)))
+            for x, y in [ path[0], path[-1] ]:
+                cv2.putText( new, '%s' % l, (y,x), cv2.FONT_HERSHEY_SIMPLEX, 0.4, 255 )
             for x, y in path:
                 new[x,y]=20*l
                 f.write('%g %g\n' % (y,-x))

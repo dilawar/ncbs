@@ -5,12 +5,12 @@ logo : ncbs.pdf
 ncbs.svg : ncbs.dvi
 	dvisvgm $<
 
-ncbs.pdf : ncbs.tex
+ncbs.pdf : ncbs.tex ./path1.txt
 	pdflatex $<
 
 ncbs.dvi : ncbs.tex analyze
 	latex --shell-escape $<
 
-analyze: ./analyze.py
+analyze path1.txt : ./analyze.py
 	python $<
 
