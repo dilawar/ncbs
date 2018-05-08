@@ -16,7 +16,7 @@
 
     \begin{axis}[axis lines=none, smooth, color=white
         , every plot/.style={draw=white}
-        , axis equal
+        , axis equal, scale = 10
         ]
 
         % n
@@ -39,12 +39,18 @@
         \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path5.txt} -- cycle;
         \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path6.txt} -- cycle;
         \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path7.txt} -- cycle;
+
         \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path12.txt} -- cycle;
         \addplot[smooth, draw=ncbsred, fill=ncbsred] plot file{path13.txt} -- cycle;
         \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path14.txt} -- cycle;
         \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path15.txt} -- cycle;
+        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path16.txt} -- cycle;
 
-        \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path1.txt};
+        %\addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] gnuplot[raw gnuplot] {
+        %    plot "path16.txt" smooth bezier
+        %};
+
+        % \addplot[smooth, draw=ncbsgreen, fill=ncbsgreen] plot file{path1.txt};
 
 
     \end{axis}

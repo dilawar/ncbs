@@ -1,8 +1,6 @@
 all : logo
 
-
-logo : ncbs.svg 
-
+logo : ncbs.svg
 
 ncbs.svg : ncbs.dvi
 	dvisvgm $<
@@ -10,4 +8,6 @@ ncbs.svg : ncbs.dvi
 ncbs.dvi : ncbs.tex
 	latex --shell-escape $<
 
+ncbs.tex : ./analyze.py
+	python $<
 
