@@ -32,16 +32,14 @@ def min_nonzero(vec):
 def smooth_but_preserve_corners(path):
     path = path_sort( path )
     newpath = [ path[0] ]
-    t = 1
     for p in path[1:]:
-        if abs(p[0] - newpath[-1][0]) < t or abs(p[1]-newpath[-1][1])< t:
-            print( '.', end = '' )
+        if p[0] == newpath[-1][0] or p[1] == newpath[-1][1]:
             continue
         newpath.append( p )
     return newpath
 
 def path_sort( path ):
-    newpath = [ path[0] ]
+    newpath = max(path[0])
     path.pop(0)
     while path:
         near, nearI = min_nonzero([ (dist(newpath[-1], x), i) for i, x in enumerate(path)])
@@ -80,9 +78,13 @@ def main( ):
     for l in range(1,int(temp.max())+1):
         p1 = np.where( temp == l )
         with open('path%d.txt' % l, 'w' ) as f:
-            for x, y in smooth_but_preserve_corners(list(zip(*p1))):
-                new[x,y]=10*l
+            path = smooth_but_preserve_corners(list(zip(*p1)))
+            x, y = path[0]
+            cv2.putText( new, '%s' % l, (y,x), cv2.FONT_HERSHEY_SIMPLEX, 0.4, 255 )
+            for x, y in path:
+                new[x,y]=20*l
                 f.write('%g %g\n' % (y,-x))
+
         print('Wrote labeled path to path%d.txt' % l)
     cv2.imwrite( 'connected.png', np.vstack((thres,new)))
 
