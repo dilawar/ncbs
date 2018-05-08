@@ -19,22 +19,15 @@
         coordinate (bottom) -- ++(-13.0,0) -- cycle;
 
     % pattern.
-    %\draw[lightgreen] (0,0) -- (1.5,0);
-    %\draw plot[smooth,tension=.1] coordinates {
-    %    (1.5,0) (2,-2) (3.0,-5.0) (3.5,-6.5) (4,-8)
-    %    (4,-9) (3.5, -11.2) (3.5,-11.5) (2.2,-12.5)
-    %    (2.2,-11) (2,-10.5) (1.5,-9.5) (0,-8) (0,0)
-    %};
     \begin{scope}[yshift=0cm,xshift=-0cm]
-
     \edef\TENSION{0}
-    \foreach \i in {1,4,6,8}
+    \foreach \i in {1,4,6}
         \draw[lightgreen,fill=lightgreen] plot [smooth, tension=\TENSION] 
-            file {./temp\i.txt};
+            file {./path\i.txt};
 
-    \foreach \i in {2,3,5,10}
+    \foreach \i in {2,3,5,7,8,9,10,}
         \draw[ncbsgreen,fill=ncbsgreen] plot [smooth, tension=\TENSION] 
-            file {./temp\i.txt};
+            file {./path\i.txt};
 
     \end{scope}
 
