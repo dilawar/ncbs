@@ -43,11 +43,10 @@ def path_sort( path ):
         near, nearI = min_nonzero([ (dist(newpath[-1], x), i) for i, x in enumerate(path)])
         newpath.append(path[nearI])
         path.pop(nearI)
-    print( newpath )
     return newpath
 
 def find_corners( img ):
-    corners = cv2.goodFeaturesToTrack(img, 1000, 0.5, 1 )
+    corners = cv2.goodFeaturesToTrack(img, 1000, 0.5, 30 )
     new = np.zeros_like(img)
     for c in corners:
         for y, x in c:
@@ -55,22 +54,24 @@ def find_corners( img ):
     return corners, new
 
 def main( ):
-    img = cv2.imread( './logo.png', 0 )
+    img = cv2.imread( './pattern.png', 0 )
 
     # Find corners and keep them. They are usually lost when other operations
     # are performed.
     corners, new = find_corners( img )
 
-    img = cv2.bilateralFilter(img, 9, 75, 75)
-    thres = cv2.Canny( img, 100, 200 )
+    #  img = cv2.bilateralFilter(img, 13, 75, 75)
+    thres = cv2.Canny( img, 150, 250 )
 
     # Add corners to thres image
     for cs in corners:
         for x, y in cs:
             thres[int(y),int(x)] = thres.max()
 
+    # Now reduce the thickness of 
+
     # Compute connected components.
-    n, temp = cv2.connectedComponents(thres, 8)
+    n, temp = cv2.connectedComponents(thres, 4)
     new = np.zeros_like(temp)
 
     for l in range(1,int(temp.max())+1):
@@ -81,10 +82,11 @@ def main( ):
                 cv2.putText( new, '%s' % l, (y,x), cv2.FONT_HERSHEY_SIMPLEX, 0.4, 255 )
             for x, y in path:
                 new[x,y]=20*l
-                f.write('%g %g\n' % (y/10.0,-x/10.0))
+                f.write('%g %g\n' % (y/20.0,-x/20.0))
 
         print('Wrote labeled path to path%d.txt' % l)
-    cv2.imwrite( 'connected.png', np.vstack((thres,new)))
+    cv2.imwrite( 'connected.png', np.hstack((thres,new)))
+    print( 'Wrote connected.png' )
 
 if __name__ == '__main__':
     main()

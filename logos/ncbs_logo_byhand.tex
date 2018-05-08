@@ -25,13 +25,16 @@
     %    (4,-9) (3.5, -11.2) (3.5,-11.5) (2.2,-12.5)
     %    (2.2,-11) (2,-10.5) (1.5,-9.5) (0,-8) (0,0)
     %};
-    \begin{scope}[yshift=11.5cm,xshift=-3.5cm]
-        \foreach \i in {3,6,12}
-            \draw[lightgreen,fill=lightgreen] plot [smooth, tension=0.4] file {./path\i.txt};
-                
-        \foreach \i in {4,5,7,13,14,15}
-            \draw[ncbsgreen,fill=ncbsgreen] plot [smooth, tension=0.4] file
-                {./path\i.txt};
+    \begin{scope}[yshift=0cm,xshift=-0cm]
+
+    \edef\TENSION{0}
+    \foreach \i in {1,4,6,8}
+        \draw[lightgreen,fill=lightgreen] plot [smooth, tension=\TENSION] 
+            file {./temp\i.txt};
+
+    \foreach \i in {2,3,5,10}
+        \draw[ncbsgreen,fill=ncbsgreen] plot [smooth, tension=\TENSION] 
+            file {./temp\i.txt};
 
     \end{scope}
 
