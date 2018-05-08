@@ -20,10 +20,10 @@
         ]
 
         % n
-        \addplot[fill=ncbstext,smooth,ncbstext] plot file{path10.txt} -- cycle;
+        \addplot[fill=ncbstext,ncbstext] plot[smooth] file{path10.txt};
 
         % c
-        \addplot[fill=ncbstext,smooth,ncbstext] plot file{path8.txt} -- cycle;
+        \addplot[fill=ncbstext,smooth,ncbstext] plot[smooth] file{path8.txt} -- cycle;
 
         % b
         \addplot[name path=bout,ncbstext] table{path2.txt} -- cycle;

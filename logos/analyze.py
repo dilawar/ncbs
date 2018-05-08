@@ -32,13 +32,12 @@ def min_nonzero(vec):
 def smooth_but_preserve_corners(path):
     path = path_sort( path )
     newpath = [ path[0] ]
-    t = 0
+    t = 1
     for p in path[1:]:
         if abs(p[0] - newpath[-1][0]) < t or abs(p[1]-newpath[-1][1])< t:
             print( '.', end = '' )
             continue
         newpath.append( p )
-    print('')
     return newpath
 
 def path_sort( path ):
@@ -50,16 +49,32 @@ def path_sort( path ):
         path.pop(nearI)
     return newpath
 
+def find_corners( img ):
+    corners = cv2.goodFeaturesToTrack(img, 1000, 0.2, 1 )
+    new = np.zeros_like(img)
+    for c in corners:
+        for y, x in c:
+            new[int(x),int(y)] = 255
+    return corners, new
+
 def main( ):
     img = cv2.imread( './logo.png', 0 )
+
+    # Find corners and keep them. They are usually lost when other operations
+    # are performed.
+    corners, new = find_corners( img )
+
     #  img = cv2.bilateralFilter(img, 9, 75, 75)
-    thres = cv2.Canny( img, 20, 100 )
+    thres = cv2.Canny( img, 100, 200 )
     cv2.imwrite( 'logo_edges.png', np.vstack((img,thres)) )
+
+    # Add corners to thres image
+    for cs in corners:
+        for x, y in cs:
+            thres[int(y),int(x)] = thres.max()
 
     # Compute connected components.
     n, temp = cv2.connectedComponents(thres, 4)
-    cv2.imwrite( 'logo_ccomp.png', temp )
-
     new = np.zeros_like(temp)
 
     for l in range(1,int(temp.max())+1):
@@ -69,7 +84,7 @@ def main( ):
                 new[x,y]=10*l
                 f.write('%g %g\n' % (y,-x))
         print('Wrote labeled path to path%d.txt' % l)
-    cv2.imwrite( 'logo.jpg', np.vstack((thres,new)))
+    cv2.imwrite( 'connected.png', np.vstack((thres,new)))
 
 if __name__ == '__main__':
     main()
