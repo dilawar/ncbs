@@ -75,13 +75,13 @@ def main( ):
 
     for l in range(1,int(temp.max())+1):
         p1 = np.where( temp == l )
-        with open('path%d.txt' % l, 'w' ) as f:
+        with open('temp%d.txt' % l, 'w' ) as f:
             path = preprocess(list(zip(*p1)))
             for x, y in [ path[0], path[-1] ]:
                 cv2.putText( new, '%s' % l, (y,x), cv2.FONT_HERSHEY_SIMPLEX, 0.4, 255 )
             for x, y in path:
                 new[x,y]=20*l
-                f.write('%g %g\n' % (y,-x))
+                f.write('%g %g\n' % (y/10.0,-x/10.0))
 
         print('Wrote labeled path to path%d.txt' % l)
     cv2.imwrite( 'connected.png', np.vstack((thres,new)))

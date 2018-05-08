@@ -1,4 +1,7 @@
-all : logo
+all : ./ncbs_logo_byhand.pdf
+
+%.pdf : %.tex
+	pdflatex $<
 
 logo : ncbs.pdf
 
@@ -13,4 +16,5 @@ ncbs.dvi : ncbs.tex analyze
 
 analyze path1.txt : ./analyze.py
 	python $<
+
 
