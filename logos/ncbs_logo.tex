@@ -19,15 +19,15 @@
         coordinate (bottom) -- ++(-13.0,0) -- cycle;
 
     % pattern.
-    \begin{scope}[yshift=0cm,xshift=-0cm]
+    \begin{scope}[yshift=-13cm,xshift=13cm, scale=0.05,rotate=90]
     \edef\TENSION{0}
     \foreach \i in {1,4,6}
         \draw[lightgreen,fill=lightgreen] plot [smooth, tension=\TENSION] 
-            file {./path\i.txt};
+            file {./cnt\i.txt};
 
     \foreach \i in {2,3,5,7,8,9}
         \draw[ncbsgreen,fill=ncbsgreen] plot [smooth, tension=\TENSION] 
-            file {./path\i.txt};
+            file {./cnt\i.txt};
 
     \end{scope}
 
