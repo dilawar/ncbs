@@ -84,7 +84,7 @@ def main( ):
                 new[x,y]=20*l
                 f.write('%g %g\n' % (y/20.0,-x/20.0))
 
-        print('Wrote labeled path to path%d.txt' % l)
+        print('Wrote labeled path to temp%d.txt' % l)
     cv2.imwrite( 'connected.png', np.hstack((thres,new)))
     print( 'Wrote connected.png' )
 
