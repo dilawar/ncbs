@@ -1,20 +1,7 @@
-all : ./ncbs_logo_byhand.pdf
+all : pattern ./ncbs_logo.pdf 
 
 %.pdf : %.tex
 	pdflatex $<
 
-logo : ncbs.pdf
-
-ncbs.svg : ncbs.dvi
-	dvisvgm $<
-
-ncbs.pdf : ncbs.tex ./path1.txt
-	pdflatex $<
-
-ncbs.dvi : ncbs.tex analyze
-	latex --shell-escape $<
-
-analyze path1.txt : ./analyze.py
-	python $<
-
-
+pattern : ./analyze_pattern.py
+	python3 $<

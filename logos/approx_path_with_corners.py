@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """approx_path_with_corners.py: 
 
 """
@@ -15,7 +16,7 @@ import numpy as np
 import math
 import cv2
 
-scale_ = 100
+scale_ = 4
 
 def dist(p1, p2):
     a, b = p1
@@ -43,7 +44,7 @@ def process( path ):
     # Assumes that path are sorted.
     path = np.array(path)
     newpath = path[:]
-    for j in range(20):
+    for j in range(1):
         for i, post in enumerate(newpath[2:]):
             prev, cur = newpath[i], newpath[i+1]
             theta = angle_three_points(prev, cur, post )
