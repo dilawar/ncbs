@@ -19,14 +19,14 @@
         coordinate (bottom) -- ++(-13.0,0) -- cycle;
 
     % pattern.
-    \begin{scope}[yshift=0cm,xshift=0cm, xscale=0.05, yscale=-0.05, rotate=0]
+    \begin{scope}[yshift=0cm,xshift=0cm, xscale=1, yscale=-1, rotate=0]
     \edef\TENSION{0}
     \foreach \i in {4,7,9}
-        \draw[lightgreen,fill=lightgreen] plot [smooth, tension=\TENSION] 
+        \draw[draw=none,fill=lightgreen] plot [scale=0.025,smooth cycle, tension=\TENSION] 
             file {./cnt\i.txt};
 
     \foreach \i in {1,2,3,5,6,8}
-        \draw[ncbsgreen,fill=ncbsgreen] plot [smooth, tension=\TENSION] 
+        \draw[draw=none,fill=ncbsgreen] plot [scale=0.025,smooth cycle, tension=\TENSION] 
             file {./cnt\i.txt};
 
     \end{scope}

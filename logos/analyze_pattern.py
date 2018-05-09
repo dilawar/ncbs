@@ -17,8 +17,9 @@ import cv2 as cv
 
 def main():
     pat = cv.imread( './pattern.png', 0 )
+    pat = cv.resize( pat, None, fx=2, fy=2)
 
-    ret, thresh = cv.threshold(pat, 127, 255, 0)
+    ret, thresh = cv.threshold(pat, 200, 255, 0)
     im2, contours, hierarchy = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 
     res = np.zeros_like(pat)
@@ -27,6 +28,9 @@ def main():
             print( 'c', end='')
         
         #  res = cv.drawContours(res, cnt, -1, 255 )
+        #  cnt = cv.convexHull( cnt )
+        epsilon = 0.0001*cv.arcLength(cnt,True)
+        cnt = cv.approxPolyDP(cnt,epsilon,True)
         data = [ x[0] for x in cnt ]
         for (x0,y0), (x1,y1) in zip(data, data[1:]):
             cv.line(res, (x0,y0), (x1,y1), 255, 1 )
