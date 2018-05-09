@@ -20,13 +20,21 @@ scale_ = 100
 def dist(p1, p2):
     a, b = p1
     c, d = p2 
-    return ((a-b)**2+(c-d)**2)**0.5
+    return ((a-c)**2 + (b-d)**2)**0.5
 
 def atan(y, x):
     if x == 0:
         return math.pi/2.0
     else:
         return math.atan(y/x)
+
+def angle_three_points(pleft, p0, pright):
+    # p2 is the where we are computing angle
+    a = dist(p0, pleft)
+    b = dist(p0, pright)
+    c = dist(pleft, pright)
+    k = (a**2+b**2-c**2)/(2*a*b)
+    return math.acos(min(1, max(k,-1)))
 
 def scale(p):
     return (int(p[0]*scale_), int(p[1]*scale_))
@@ -35,9 +43,13 @@ def process( path ):
     # Assumes that path are sorted.
     path = np.array(path)
     newpath = path[:]
-    for j in range(1):
-        for i, prev in enumerate(newpath[1:-1]):
-            cur, post = path[i+1:i+3]
+    for j in range(20):
+        for i, post in enumerate(newpath[2:]):
+            prev, cur = newpath[i], newpath[i+1]
+            theta = angle_three_points(prev, cur, post )
+            if theta < 1.01 * math.pi /2 :
+                print( 'v', end = '' )
+                continue
             newcur = (prev[0]+post[0])/2.0, (prev[1]+post[1])/2.0
             newpath[i+1] = newcur
     return newpath
